@@ -119,6 +119,19 @@ body {
   --sea:   #3090CC;
 }
 
+/* Interests — penultimate dark section */
+#interests {
+  background-color: #060810;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.02'/%3E%3C/svg%3E"),
+    radial-gradient(ellipse 50% 40% at 30% 60%, rgba(8, 40, 100, 0.07) 0%, transparent 60%);
+  background-size: 200px 200px, cover;
+  color: #C0C8D8;
+  --muted: #465568;
+  --sky: #5BC0FF;
+  --sea: #3090CC;
+}
+
 #contact {
   background-color: #020304;
   background-image:
@@ -616,6 +629,28 @@ h2 {
   text-transform: uppercase;
   font-weight: 500;
 }
+
+/* ── Interests ─────────────────────────────────────────────────────────────── */
+.interests-body p {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #A0ACBC;
+  max-width: 58ch;
+}
+
+.interests-cta {
+  margin-top: 1.5rem !important;
+}
+
+.interests-cta a {
+  color: #FFD100;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  transition: color 0.15s;
+}
+
+.interests-cta a:hover { color: #FFDD44; }
 
 /* ── Pull quote ────────────────────────────────────────────────────────────── */
 blockquote {

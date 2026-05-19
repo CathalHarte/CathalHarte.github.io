@@ -107,6 +107,11 @@ const CV = {
     ],
   },
 
+  interests: {
+    body: 'Deliberately staying away from the mainstream — no algorithmic feeds, no social media recommendations. I read {s:Noema}, {b:Aeon}, and {y:Equator} via newsletters.',
+    cta:  'Drop me an email to talk about the revolution.',
+  },
+
   pullquote: {
     text:   'I\'d like to stress the substantial development effort we made to enable the system to be used at home. That\'s what makes the achievement all the more real for me.',
     source: 'Silicon Republic',
@@ -138,7 +143,7 @@ function markup(str) {
   document.title = 'CV — ' + data.name;
 
   document.getElementById('nav-logo').textContent = data.initials;
-  const navSections = ['about', 'project', 'experience', 'press', 'contact'];
+  const navSections = ['about', 'project', 'press', 'interests', 'contact'];
   document.getElementById('nav-links').innerHTML = navSections
     .map(s => `<li><a href="#${s}">${s.charAt(0).toUpperCase() + s.slice(1)}</a></li>`)
     .join('');
@@ -148,10 +153,10 @@ function markup(str) {
     renderHero(data),
     renderAbout(data),
     renderProject(data),
-    renderTerapet(data),
-    renderExperience(data),
     renderPullquote(data),
     renderPress(data),
+    renderTerapet(data),
+    renderInterests(data),
     renderContact(data),
   ].join('');
 
@@ -313,6 +318,16 @@ function renderTerapet(d) {
         </div>
       </div>
     </section>`;
+}
+
+function renderInterests(d) {
+  const i = d.interests;
+  return sectionWrap('interests', 'Interests', 'Outside the feed', `
+    <div class="reveal interests-body">
+      <p>${markup(i.body)}</p>
+      <p class="interests-cta"><a href="mailto:${d.contact.email}">${i.cta}</a></p>
+    </div>
+  `);
 }
 
 function renderPullquote(d) {
