@@ -8,11 +8,13 @@ A simple static website built as an online CV. No frameworks, no build step — 
 
 | Role | Colour |
 |---|---|
-| Primary accent | Yellow |
+| Primary accent | Yellow / Gold |
 | Secondary accent | Orange |
 | Highlight / links | Sky blue |
 | Deep accent | Sea blue |
-| Body text | Black / White |
+| Body text | Black (light sections) / White (dark sections) |
+
+The palette shifts across the page: light warm tones at the top, cool dark tones at the bottom. Accent colours adapt for legibility as the background changes.
 
 ---
 
@@ -20,30 +22,48 @@ A simple static website built as an online CV. No frameworks, no build step — 
 
 ### Scroll behaviour
 - Elements move as the user scrolls — not just fade in, but shift, slide, and settle
-- The page transitions from a **light** to a **dark** feel as the user scrolls down (or vice versa)
-- Key words and phrases are pulled forward: different colours, earlier entrance timing, or subtle scale
+- The page transitions from a **light** warm feel (hero) to a **dark** cool feel (contact) as the user scrolls down
+- Key words and phrases light up in accent colours after their section fades in, drawing the eye
 
 ### Attention direction
-- Important words within paragraphs are coloured (yellow, orange, sky blue) rather than bolded
+- Important words within paragraphs are coloured (yellow, orange, sky, sea) rather than bolded
 - Section reveals are staggered so the eye is drawn to the most important element first
-- Scroll-linked parallax or transform effects give depth without being distracting
+- Hero content drifts slightly on parallax as you scroll away from it
 
 ---
 
 ## File Structure
 
-The goal is to keep **content** and **style** clearly separated so that writing or editing copy does not require touching layout or animation code.
+Content and style are kept deliberately separate.
 
 ```
 /
-├── index.html        # Structure only — semantic HTML, no inline styles
-├── content.js        # All page text lives here as plain data objects
-├── style.css         # All visual decisions: colours, typography, animation
-├── scroll.js         # Scroll-driven behaviour: observers, parallax, transitions
+├── index.html    # Bare skeleton — loads assets, defines no content or styles
+├── content.js    # All page text as plain data objects — edit your CV here
+├── style.css     # All visual decisions: colours, typography, animation
+├── scroll.js     # Scroll-driven behaviour: theme transitions, reveals, parallax
 └── README.md
 ```
 
-> **Note:** The split into separate files is the target structure. The project currently lives in a single `index.html` and will be refactored toward this layout as it develops.
+**To update your CV:** open `content.js` and edit the `CV` object at the top of the file. The render logic is below a clear separator — no need to touch it.
+
+---
+
+## Colour Markup
+
+Inside any text field in `content.js`, you can colour individual words or phrases:
+
+| Syntax | Colour |
+|---|---|
+| `{y:your text}` | Yellow / Gold |
+| `{o:your text}` | Orange |
+| `{s:your text}` | Sky blue |
+| `{b:your text}` | Sea blue |
+
+Example:
+```
+'I build {s:fast, accessible web applications} with a focus on {y:clean architecture}.'
+```
 
 ---
 
