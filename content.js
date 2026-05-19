@@ -75,13 +75,7 @@ const CV = {
     },
   ],
 
-  awards: [
-    {
-      name: 'Lopez-Loreta Prize',
-      year: '2025',
-      desc: '€1,000,000 award over five years, recognising exceptional academic and professional achievement.',
-    },
-  ],
+  awards: [],
 
   education: [
     {
@@ -90,6 +84,33 @@ const CV = {
       date:   '–',
     },
   ],
+
+  projects: [
+    {
+      badge:    'Physics World Breakthrough of the Year 2023',
+      name:     'Brain-Spine Interface',
+      subtitle: 'Restoring natural walking after chronic spinal cord injury',
+      desc:     'A cortical implant decodes movement intent wirelessly, in real time, driving a spinal stimulator that reawakens circuits below the injury. I built the clinical software that made it work — and made it work in patients\' homes.',
+      embedUrl: 'https://www.youtube.com/embed/AARVY-3oDRQ?rel=0',
+    },
+  ],
+
+  terapet: {
+    badge:    'ISO 13485:2016 Certified',
+    name:     'Terapet',
+    subtitle: 'Particle therapy QA · Total-body PET imaging',
+    desc:     'Two product lines: Qualyscan, a real-time QA system for proton and particle therapy, and Nuclγscan, a CERN-founded total-body PET scanner. Building the software across both — from acquisition and clinical integration to regulatory clearance.',
+    links: [
+      { label: 'ISO 13485:2016 certification', url: 'https://terapet.ch/terapet-achieves-iso-134852016-certification/', note: 'News' },
+      { label: 'Webinars I host',              url: 'https://terapet.ch/webinars/',                                       note: 'Qualyscan' },
+      { label: 'PTCOG 2026',                   url: 'https://terapet.ch/ptcog-2026/',                                     note: 'Qualyscan', upcoming: true },
+    ],
+  },
+
+  pullquote: {
+    text:   'I\'d like to stress the substantial development effort we made to enable the system to be used at home. That\'s what makes the achievement all the more real for me.',
+    source: 'Silicon Republic',
+  },
 
   contact: {
     email:    'cathal.harte@proton.me',
@@ -117,7 +138,7 @@ function markup(str) {
   document.title = 'CV — ' + data.name;
 
   document.getElementById('nav-logo').textContent = data.initials;
-  const navSections = ['about', 'experience', 'press', 'skills', 'education', 'contact'];
+  const navSections = ['about', 'project', 'experience', 'press', 'contact'];
   document.getElementById('nav-links').innerHTML = navSections
     .map(s => `<li><a href="#${s}">${s.charAt(0).toUpperCase() + s.slice(1)}</a></li>`)
     .join('');
@@ -126,10 +147,11 @@ function markup(str) {
   root.innerHTML = [
     renderHero(data),
     renderAbout(data),
+    renderProject(data),
+    renderTerapet(data),
     renderExperience(data),
+    renderPullquote(data),
     renderPress(data),
-    renderSkills(data),
-    renderEducation(data),
     renderContact(data),
   ].join('');
 
@@ -248,6 +270,60 @@ function sectionWrap(id, label, title, bodyHTML) {
           <div class="divider"></div>
         </div>
         ${bodyHTML}
+      </div>
+    </section>`;
+}
+
+
+function renderProject(d) {
+  const p = d.projects[0];
+  return `
+    <section id="project">
+      <div class="section-inner">
+        <div class="project-card reveal">
+          <span class="project-badge">${p.badge}</span>
+          <h3 class="project-name">${p.name}</h3>
+          <p class="project-subtitle">${p.subtitle}</p>
+          <p class="project-desc">${p.desc}</p>
+        </div>
+        <div class="project-video reveal">
+          <iframe src="${p.embedUrl}" title="${p.name}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>`;
+}
+
+function renderTerapet(d) {
+  const t = d.terapet;
+  const links = t.links.map(l => `
+    <a href="${l.url}" class="tlink" target="_blank" rel="noopener">
+      ${l.upcoming ? '<span class="tlink-chip">Upcoming</span>' : ''}
+      <span class="tlink-label">${l.label}</span>
+      <span class="tlink-note">${l.note}</span>
+    </a>`).join('');
+  return `
+    <section id="terapet">
+      <div class="section-inner">
+        <div class="project-card project-card--blue reveal">
+          <span class="project-badge">${t.badge}</span>
+          <h3 class="project-name">${t.name}</h3>
+          <p class="project-subtitle">${t.subtitle}</p>
+          <p class="project-desc">${t.desc}</p>
+          <div class="tlinks">${links}</div>
+        </div>
+      </div>
+    </section>`;
+}
+
+function renderPullquote(d) {
+  const q = d.pullquote;
+  return `
+    <section id="pullquote">
+      <div class="section-inner">
+        <blockquote class="reveal">
+          <p>${q.text}</p>
+          <cite>${q.source}</cite>
+        </blockquote>
       </div>
     </section>`;
 }

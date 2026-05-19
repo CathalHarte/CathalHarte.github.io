@@ -2,7 +2,10 @@
 const THEMES = {
   hero:       { navBg: 'rgba(255,255,255,0.92)', fg: '#0A0A0A', muted: '#4A4A4A' },
   about:      { navBg: 'rgba(255,255,255,0.92)', fg: '#0A0A0A', muted: '#4A4A4A' },
+  project:    { navBg: 'rgba(0,8,20,0.98)',      fg: '#C8D0E0', muted: '#5A7090' },
+  terapet:    { navBg: 'rgba(0,8,20,0.98)',      fg: '#C8D0E0', muted: '#5A7090' },
   experience: { navBg: 'rgba(0,13,28,0.97)',     fg: '#C8D0E0', muted: '#5A7090' },
+  pullquote:  { navBg: 'rgba(0,13,28,0.97)',     fg: '#C8D0E0', muted: '#5A7090' },
   press:      { navBg: 'rgba(0,10,21,0.97)',     fg: '#C8D0E0', muted: '#506080' },
   skills:     { navBg: 'rgba(250,249,247,0.92)', fg: '#0A0A0A', muted: '#4A4A4A' },
   education:  { navBg: 'rgba(4,6,8,0.98)',       fg: '#C0C8D8', muted: '#486070' },
@@ -41,7 +44,7 @@ const navObserver = new IntersectionObserver((entries) => {
   });
 }, { rootMargin: '-44% 0px -44% 0px' });
 
-// ── Scroll handler — progress bar + stronger hero parallax ───────────────────
+// ── Scroll handler — progress bar + hero parallax ────────────────────────────
 const progressBar = document.getElementById('progress');
 const viewH       = window.innerHeight;
 

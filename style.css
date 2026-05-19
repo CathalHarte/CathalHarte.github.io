@@ -32,6 +32,20 @@ body {
   --muted: #4A4A4A;
 }
 
+/* Project — featured deep card, first dark section */
+#project {
+  border-top: 4px solid #FF5500;
+  padding: 5rem 0 6rem;
+  background-color: #000814;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.025'/%3E%3C/svg%3E"),
+    radial-gradient(ellipse 70% 60% at 25% 70%, rgba(255, 85, 0, 0.06) 0%, transparent 60%);
+  background-size: 200px 200px, cover;
+  color: #C8D0E0;
+  --muted: #4E6080;
+  --sky: #5BC0FF;
+}
+
 /* Dark sea — deep blue-black with faint cold glow */
 #experience {
   background-color: #000D1C;
@@ -43,6 +57,30 @@ body {
   --muted: #4E6080;
   --sky:   #5BC0FF;
   --sea:   #3090CC;
+}
+
+/* Terapet — flows seamlessly from project section */
+#terapet {
+  padding: 2rem 0 6rem;
+  background-color: #000814;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.025'/%3E%3C/svg%3E"),
+    radial-gradient(ellipse 60% 50% at 75% 30%, rgba(20, 80, 200, 0.07) 0%, transparent 60%);
+  background-size: 200px 200px, cover;
+  color: #C8D0E0;
+  --muted: #4E6080;
+  --sky: #5BC0FF;
+}
+
+/* Pull quote — continuation of the dark */
+#pullquote {
+  padding: 5rem 0;
+  background-color: #000D1C;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.025'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+  color: #C8D0E0;
+  --muted: #4E6080;
 }
 
 #press {
@@ -93,7 +131,7 @@ body {
 }
 
 /* Orange marker at each light → dark transition */
-#experience, #education {
+#education {
   border-top: 4px solid #FF5500;
 }
 
@@ -172,7 +210,6 @@ h2 {
   font-family: 'Source Serif 4', serif;
   font-size: 2.2rem;
   font-weight: 700;
-  font-style: italic;
   letter-spacing: -0.01em;
   margin-bottom: 1rem;
   line-height: 1.15;
@@ -446,6 +483,165 @@ h2 {
 }
 
 #cv-footer { display: none; }
+
+/* ── Project card ──────────────────────────────────────────────────────────── */
+.project-card {
+  background: linear-gradient(135deg, rgba(255, 85, 0, 0.06) 0%, rgba(0, 8, 20, 0) 55%);
+  border: 1px solid rgba(255, 85, 0, 0.22);
+  border-radius: 8px;
+  padding: 2.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card::after {
+  content: '';
+  position: absolute;
+  top: 0; right: 0;
+  width: 55%; height: 100%;
+  background: radial-gradient(ellipse 80% 80% at 100% 0%, rgba(255, 85, 0, 0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.project-badge {
+  display: inline-block;
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #FF5500;
+  border: 1px solid rgba(255, 85, 0, 0.38);
+  border-radius: 3px;
+  padding: 0.28rem 0.65rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+.project-name {
+  font-family: 'Source Serif 4', serif;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 800;
+  color: #F0F4FF;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.6rem;
+}
+
+.project-subtitle {
+  font-size: 0.92rem;
+  color: var(--sky, #5BC0FF);
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.01em;
+}
+
+.project-desc {
+  font-size: 0.93rem;
+  color: var(--muted, #4E6080);
+  line-height: 1.72;
+  max-width: 58ch;
+  margin-bottom: 1.6rem;
+}
+
+.project-video {
+  margin-top: 1.5rem;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 85, 0, 0.18);
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.55);
+}
+
+.project-video iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Blue variant for Terapet card */
+.project-card--blue {
+  background: linear-gradient(135deg, rgba(91, 192, 255, 0.05) 0%, rgba(0, 8, 20, 0) 55%);
+  border-color: rgba(91, 192, 255, 0.16);
+}
+
+.project-card--blue::after {
+  background: radial-gradient(ellipse 80% 80% at 100% 0%, rgba(91, 192, 255, 0.05) 0%, transparent 70%);
+}
+
+.tlinks {
+  margin-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.tlink {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.12s;
+}
+
+.tlink:hover .tlink-label { color: #E0E8F8; }
+
+.tlink-chip {
+  font-size: 0.6rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #FFD100;
+  border: 1px solid rgba(255, 209, 0, 0.35);
+  border-radius: 3px;
+  padding: 0.2rem 0.5rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.tlink-label {
+  flex: 1;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #C0C8D8;
+  transition: color 0.15s;
+}
+
+.tlink-note {
+  font-size: 0.7rem;
+  color: var(--muted, #4E6080);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* ── Pull quote ────────────────────────────────────────────────────────────── */
+blockquote {
+  border-left: 3px solid #FF5500;
+  padding: 0 0 0 2rem;
+  max-width: 56ch;
+}
+
+blockquote p {
+  font-family: 'Source Serif 4', serif;
+  font-size: clamp(1.15rem, 2.5vw, 1.5rem);
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.55;
+  color: #E0E8F8;
+  margin-bottom: 1rem;
+}
+
+blockquote cite {
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #FF5500;
+  font-style: normal;
+  font-weight: 600;
+}
 
 /* ── Scroll reveal ─────────────────────────────────────────────────────────── */
 .reveal {
