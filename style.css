@@ -59,9 +59,8 @@ body {
   --sea:   #3090CC;
 }
 
-/* Terapet — dark after white press, needs transition marker */
+/* Terapet — continuous dark, no transition marker needed */
 #terapet {
-  border-top: 4px solid #FF5500;
   padding: 2rem 0 6rem;
   background-color: #000814;
   background-image:
@@ -73,27 +72,28 @@ body {
   --sky: #5BC0FF;
 }
 
-/* Pull quote — light, warm white */
+/* Pull quote — dark, flows from BSI */
 #pullquote {
   padding: 5rem 0;
-  background-color: #FAF9F7;
+  background-color: #000D1C;
   background-image:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E"),
-    radial-gradient(ellipse 70% 60% at 60% 50%, rgba(255, 85, 0, 0.025) 0%, transparent 65%);
-  background-size: 200px 200px, cover;
-  color: #0A0A0A;
-  --muted: #4A4A4A;
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.025'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+  color: #C8D0E0;
+  --muted: #4E6080;
 }
 
-/* In the news — light, warm white */
+/* In the news — dark */
 #press {
-  background-color: #FFFFFF;
+  background-color: #000A15;
   background-image:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E"),
-    radial-gradient(ellipse 70% 60% at 35% 55%, rgba(255, 85, 0, 0.025) 0%, transparent 65%);
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.025'/%3E%3C/svg%3E"),
+    radial-gradient(ellipse 50% 40% at 78% 60%, rgba(10, 60, 160, 0.09) 0%, transparent 60%);
   background-size: 200px 200px, cover;
-  color: #0A0A0A;
-  --muted: #4A4A4A;
+  color: #C8D0E0;
+  --muted: #4A5A72;
+  --sky:   #5BC0FF;
+  --sea:   #3090CC;
 }
 
 /* Light return — warm off-white */
@@ -373,22 +373,22 @@ h2 {
 
 .press-card {
   display: block;
-  background: rgba(255, 255, 255, 0.65);
+  background: rgba(255, 255, 255, 0.03);
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 6px;
   padding: 1.3rem;
   text-decoration: none;
   color: inherit;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
   transition: border-color 0.15s, background 0.15s, transform 0.15s, box-shadow 0.15s;
 }
 
 .press-card:hover {
-  border-color: rgba(255, 85, 0, 0.35);
-  background: rgba(255, 255, 255, 0.95);
+  border-color: rgba(255, 85, 0, 0.5);
+  background: rgba(255, 85, 0, 0.06);
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.07), 0 8px 24px rgba(0, 0, 0, 0.35);
 }
 
 .press-type {
@@ -503,9 +503,13 @@ h2 {
   background: linear-gradient(135deg, rgba(255, 85, 0, 0.06) 0%, rgba(0, 8, 20, 0) 55%);
   border: 1px solid rgba(255, 85, 0, 0.22);
   border-radius: 8px;
-  padding: 2.5rem;
+  padding: 0;
   position: relative;
   overflow: hidden;
+}
+
+.project-card-body {
+  padding: 2.5rem;
 }
 
 .project-card::after {
@@ -557,14 +561,12 @@ h2 {
 }
 
 .project-video {
-  margin-top: 1.5rem;
-  border-radius: 6px;
+  border-top: 1px solid rgba(255, 85, 0, 0.12);
+  border-radius: 0 0 7px 7px;
   overflow: hidden;
-  border: 1px solid rgba(255, 85, 0, 0.18);
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
-  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.55);
 }
 
 .project-video iframe {

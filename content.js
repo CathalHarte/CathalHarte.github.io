@@ -286,13 +286,15 @@ function renderProject(d) {
     <section id="project">
       <div class="section-inner">
         <div class="project-card reveal">
-          <span class="project-badge">${p.badge}</span>
-          <h3 class="project-name">${p.name}</h3>
-          <p class="project-subtitle">${p.subtitle}</p>
-          <p class="project-desc">${p.desc}</p>
-        </div>
-        <div class="project-video reveal">
-          <iframe src="${p.embedUrl}" title="${p.name}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="project-card-body">
+            <span class="project-badge">${p.badge}</span>
+            <h3 class="project-name">${p.name}</h3>
+            <p class="project-subtitle">${p.subtitle}</p>
+            <p class="project-desc">${p.desc}</p>
+          </div>
+          <div class="project-video">
+            <iframe src="${p.embedUrl}" title="${p.name}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
         </div>
       </div>
     </section>`;
