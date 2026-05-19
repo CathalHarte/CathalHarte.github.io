@@ -201,19 +201,25 @@ h2 {
   overflow: hidden;
 }
 
+/* Drifting light orb — sunlight on water before you dive */
 #hero::before {
-  content: attr(data-initials);
+  content: '';
   position: absolute;
-  font-size: 44vw;
-  font-weight: 900;
-  line-height: 1;
-  color: #000;
-  opacity: 0.04;
+  width: 70vw;
+  height: 70vw;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 100, 0, 0.07) 0%, transparent 65%);
+  top: -10%;
+  left: -5%;
   pointer-events: none;
-  user-select: none;
-  right: -3vw;
-  top: 50%;
-  transform: translateY(-50%);
+  z-index: 0;
+  animation: hero-orb 14s ease-in-out infinite alternate;
+}
+
+@keyframes hero-orb {
+  0%   { transform: translate(0%,   0%)  scale(1.0); }
+  40%  { transform: translate(28%,  18%) scale(1.18); }
+  100% { transform: translate(10%,  35%) scale(0.92); }
 }
 
 .hero-inner {
@@ -221,6 +227,8 @@ h2 {
   margin: 0 auto;
   padding: 0 2rem;
   will-change: transform;
+  position: relative;
+  z-index: 1;
 }
 
 .hero-eyebrow {
@@ -236,11 +244,12 @@ h2 {
 }
 
 .hero-name {
-  font-size: clamp(3rem, 7vw, 5.5rem);
-  font-weight: 900;
-  line-height: 1.02;
-  letter-spacing: -0.04em;
-  margin-bottom: 0.9rem;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(5rem, 11vw, 9rem);
+  font-weight: 400;
+  line-height: 0.92;
+  letter-spacing: 0.03em;
+  margin-bottom: 1rem;
   opacity: 0;
   transform: translateY(28px);
   animation: fadeUp 0.6s 0.28s ease forwards;
@@ -297,6 +306,35 @@ h2 {
 }
 
 .btn-ghost:hover { color: #0A0A0A; border-color: #0A0A0A; }
+
+/* Cool orb drifting toward the dark — suggests the coming transition */
+#about {
+  overflow: hidden;
+}
+
+#about::before {
+  content: '';
+  position: absolute;
+  width: 60vw;
+  height: 60vw;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 50, 160, 0.05) 0%, transparent 65%);
+  bottom: -25%;
+  right: -10%;
+  pointer-events: none;
+  z-index: 0;
+  animation: about-orb 16s ease-in-out infinite alternate;
+}
+
+#about .section-inner {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes about-orb {
+  from { transform: translate(0%, 0%)   scale(1.0); }
+  to   { transform: translate(-8%, -12%) scale(1.2); }
+}
 
 /* ── About ─────────────────────────────────────────────────────────────────── */
 .about-body p {
