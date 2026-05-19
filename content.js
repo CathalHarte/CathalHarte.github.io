@@ -172,7 +172,7 @@ function renderHero(d) {
         <p class="hero-title">${d.title}</p>
         <div class="hero-links">
           <a href="#contact" class="btn btn-primary">Get in touch</a>
-          <a href="#experience" class="btn btn-ghost">View my work</a>
+          <a href="#project" class="btn btn-ghost">View my work</a>
         </div>
       </div>
     </section>`;
@@ -312,11 +312,13 @@ function renderTerapet(d) {
     <section id="terapet">
       <div class="section-inner">
         <div class="project-card project-card--blue reveal">
-          <span class="project-badge">${t.badge}</span>
-          <h3 class="project-name">${t.name}</h3>
-          <p class="project-subtitle">${t.subtitle}</p>
-          <p class="project-desc">${t.desc}</p>
-          <div class="tlinks">${links}</div>
+          <div class="project-card-body">
+            <span class="project-badge">${t.badge}</span>
+            <h3 class="project-name">${t.name}</h3>
+            <p class="project-subtitle">${t.subtitle}</p>
+            <p class="project-desc">${t.desc}</p>
+            <div class="tlinks">${links}</div>
+          </div>
         </div>
       </div>
     </section>`;
