@@ -169,7 +169,7 @@ section { padding: 6rem 0; position: relative; }
 }
 
 h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Source Serif 4', serif;
   font-size: 2.2rem;
   font-weight: 700;
   font-style: italic;
@@ -203,45 +203,6 @@ h2 {
   overflow: hidden;
 }
 
-/* Cloud layer 1 — large, slow, drifts right */
-#hero::before {
-  content: '';
-  position: absolute;
-  width: 72vw;
-  height: 20vw;
-  background:
-    radial-gradient(ellipse 75% 60% at 35% 50%, rgba(91, 192, 255, 0.14) 0%, transparent 70%),
-    radial-gradient(ellipse 45% 75% at 72% 42%, rgba(150, 220, 255, 0.09) 0%, transparent 65%);
-  top: 14%;
-  left: -12%;
-  pointer-events: none;
-  z-index: 0;
-  animation: cloud-1 22s ease-in-out infinite alternate;
-}
-
-/* Cloud layer 2 — smaller, faster, drifts left at different height */
-#hero::after {
-  content: '';
-  position: absolute;
-  width: 48vw;
-  height: 14vw;
-  background: radial-gradient(ellipse 68% 55% at 50% 50%, rgba(110, 205, 255, 0.10) 0%, transparent 68%);
-  top: 50%;
-  right: -8%;
-  pointer-events: none;
-  z-index: 0;
-  animation: cloud-2 16s ease-in-out infinite alternate;
-}
-
-@keyframes cloud-1 {
-  from { transform: translate(0%,   0%)  scaleX(1.00); }
-  to   { transform: translate(22%,  -6%) scaleX(1.08); }
-}
-
-@keyframes cloud-2 {
-  from { transform: translate(0%,  0%); }
-  to   { transform: translate(-20%, 8%); }
-}
 
 .hero-inner {
   max-width: 780px;
@@ -254,7 +215,7 @@ h2 {
 
 
 .hero-name {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Source Serif 4', serif;
   font-size: clamp(3.8rem, 9vw, 7.5rem);
   font-weight: 800;
   line-height: 0.96;
@@ -317,34 +278,6 @@ h2 {
 
 .btn-ghost:hover { color: #0A0A0A; border-color: #0A0A0A; }
 
-/* Cool orb drifting toward the dark — suggests the coming transition */
-#about {
-  overflow: hidden;
-}
-
-#about::before {
-  content: '';
-  position: absolute;
-  width: 60vw;
-  height: 60vw;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(0, 50, 160, 0.05) 0%, transparent 65%);
-  bottom: -25%;
-  right: -10%;
-  pointer-events: none;
-  z-index: 0;
-  animation: about-orb 16s ease-in-out infinite alternate;
-}
-
-#about .section-inner {
-  position: relative;
-  z-index: 1;
-}
-
-@keyframes about-orb {
-  from { transform: translate(0%, 0%)   scale(1.0); }
-  to   { transform: translate(-8%, -12%) scale(1.2); }
-}
 
 /* ── About ─────────────────────────────────────────────────────────────────── */
 .about-body p {
