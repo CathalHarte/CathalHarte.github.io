@@ -201,25 +201,44 @@ h2 {
   overflow: hidden;
 }
 
-/* Drifting light orb — sunlight on water before you dive */
+/* Cloud layer 1 — large, slow, drifts right */
 #hero::before {
   content: '';
   position: absolute;
-  width: 70vw;
-  height: 70vw;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(255, 100, 0, 0.07) 0%, transparent 65%);
-  top: -10%;
-  left: -5%;
+  width: 72vw;
+  height: 20vw;
+  background:
+    radial-gradient(ellipse 75% 60% at 35% 50%, rgba(91, 192, 255, 0.14) 0%, transparent 70%),
+    radial-gradient(ellipse 45% 75% at 72% 42%, rgba(150, 220, 255, 0.09) 0%, transparent 65%);
+  top: 14%;
+  left: -12%;
   pointer-events: none;
   z-index: 0;
-  animation: hero-orb 14s ease-in-out infinite alternate;
+  animation: cloud-1 22s ease-in-out infinite alternate;
 }
 
-@keyframes hero-orb {
-  0%   { transform: translate(0%,   0%)  scale(1.0); }
-  40%  { transform: translate(28%,  18%) scale(1.18); }
-  100% { transform: translate(10%,  35%) scale(0.92); }
+/* Cloud layer 2 — smaller, faster, drifts left at different height */
+#hero::after {
+  content: '';
+  position: absolute;
+  width: 48vw;
+  height: 14vw;
+  background: radial-gradient(ellipse 68% 55% at 50% 50%, rgba(110, 205, 255, 0.10) 0%, transparent 68%);
+  top: 50%;
+  right: -8%;
+  pointer-events: none;
+  z-index: 0;
+  animation: cloud-2 16s ease-in-out infinite alternate;
+}
+
+@keyframes cloud-1 {
+  from { transform: translate(0%,   0%)  scaleX(1.00); }
+  to   { transform: translate(22%,  -6%) scaleX(1.08); }
+}
+
+@keyframes cloud-2 {
+  from { transform: translate(0%,  0%); }
+  to   { transform: translate(-20%, 8%); }
 }
 
 .hero-inner {
@@ -231,17 +250,6 @@ h2 {
   z-index: 1;
 }
 
-.hero-eyebrow {
-  font-size: 0.75rem;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: #FF5500;
-  margin-bottom: 1.2rem;
-  font-weight: 600;
-  opacity: 0;
-  transform: translateY(18px);
-  animation: fadeUp 0.55s 0.15s ease forwards;
-}
 
 .hero-name {
   font-family: 'Bebas Neue', sans-serif;
@@ -291,12 +299,12 @@ h2 {
 .btn:hover { transform: translateY(-2px); }
 
 .btn-primary {
-  background: #FF5500;
-  color: #fff;
+  background: #FFD100;
+  color: #0A0A0A;
 }
 
 .btn-primary:hover {
-  box-shadow: 0 6px 20px rgba(255, 85, 0, 0.45);
+  box-shadow: 0 6px 20px rgba(255, 209, 0, 0.45);
 }
 
 .btn-ghost {
