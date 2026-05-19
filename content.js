@@ -16,8 +16,8 @@ const CV = {
   availability: 'Open to new opportunities',
 
   about: [
-    'I build {s:clinical software for medical devices} at the frontier of neurotechnology and nuclear medicine — from {y:laboratory prototypes} to systems deployed in patients\' homes.',
-    'At {b:NeuroRestore} and {o:Onward Medical}, I led the software that powered the {y:Brain-Spine Interface}: a digital bridge that restored {s:natural walking to patients with chronic paralysis}. The work was published in {b:Nature} in 2023 and named {y:Physics World Breakthrough of the Year}. I now work at {b:Terapet}, a {s:CERN spin-off}, developing software for {y:Nuclγscan} — a next-generation total-body PET scanner for precision medicine.',
+    'I build clinical software for medical devices at the frontier of neurotechnology and nuclear medicine — from laboratory prototypes to systems deployed in patients\' homes.',
+    'At NeuroRestore and Onward Medical, I led the software that powered the Brain-Spine Interface: a digital bridge that restored natural walking to patients with chronic paralysis. The work was published in Nature in 2023 and named Physics World Breakthrough of the Year. I now work at Terapet, a CERN spin-off, developing software for Nuclγscan — a next-generation total-body PET scanner for precision medicine.',
   ],
 
   experience: [
@@ -25,13 +25,13 @@ const CV = {
       org:  'Terapet SA',
       role: 'Software Lead',
       date: '2023 – Present',
-      desc: 'Building the software backbone for {y:Nuclγscan}, a full-body PET scanner founded on {b:CERN detector technology}. Spanning acquisition pipelines, clinical integration, and the path toward regulatory clearance.',
+      desc: 'Building the software backbone for Nuclγscan, a full-body PET scanner founded on CERN detector technology. Spanning acquisition pipelines, clinical integration, and the path toward regulatory clearance.',
     },
     {
       org:  'NeuroRestore · Onward Medical',
       role: 'Lead Clinical Software Engineer',
       date: '2020 – 2023',
-      desc: 'Led development of the clinical software stack for the {y:Brain-Spine Interface} — a wireless digital bridge connecting cortical implants to epidural spinal stimulators. Approved for use in {o:five clinical trials}. Enabled {s:home deployment} of the system for the first time. Published in {b:Nature}, May 2023.',
+      desc: 'Led development of the clinical software stack for the Brain-Spine Interface — a wireless digital bridge connecting cortical implants to epidural spinal stimulators. Approved for use in five clinical trials. Enabled home deployment of the system for the first time. Published in Nature, May 2023.',
     },
     {
       org:  'Earlier experience',

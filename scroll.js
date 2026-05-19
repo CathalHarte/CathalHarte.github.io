@@ -1,12 +1,12 @@
 // ── Theme definitions — nav adapts as sections enter the viewport ─────────────
 const THEMES = {
-  hero:       { navBg: 'rgba(255,255,255,0.92)',  fg: '#0A0A0A', muted: '#595959' },
-  about:      { navBg: 'rgba(250,248,244,0.92)',  fg: '#0A0A0A', muted: '#595959' },
-  experience: { navBg: 'rgba(0,31,63,0.96)',      fg: '#E8E8EE', muted: '#8A9AB5' },
-  press:      { navBg: 'rgba(0,20,40,0.96)',      fg: '#E8E8EE', muted: '#7A8AAA' },
-  skills:     { navBg: 'rgba(250,248,244,0.92)',  fg: '#0A0A0A', muted: '#595959' },
-  education:  { navBg: 'rgba(2,8,16,0.97)',       fg: '#F0F0F8', muted: '#7880A0' },
-  contact:    { navBg: 'rgba(5,8,15,0.98)',       fg: '#F0F0F8', muted: '#6878A0' },
+  hero:       { navBg: 'rgba(255,255,255,0.92)', fg: '#0A0A0A', muted: '#4A4A4A' },
+  about:      { navBg: 'rgba(255,255,255,0.92)', fg: '#0A0A0A', muted: '#4A4A4A' },
+  experience: { navBg: 'rgba(0,13,28,0.97)',     fg: '#C8D0E0', muted: '#5A7090' },
+  press:      { navBg: 'rgba(0,10,21,0.97)',     fg: '#C8D0E0', muted: '#506080' },
+  skills:     { navBg: 'rgba(250,249,247,0.92)', fg: '#0A0A0A', muted: '#4A4A4A' },
+  education:  { navBg: 'rgba(4,6,8,0.98)',       fg: '#C0C8D8', muted: '#486070' },
+  contact:    { navBg: 'rgba(2,3,4,0.99)',       fg: '#B8C0D0', muted: '#404E60' },
 };
 
 function applyTheme(id) {
