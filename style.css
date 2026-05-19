@@ -512,16 +512,7 @@ h2 {
   transform: translateY(-2px);
 }
 
-/* ── Footer ────────────────────────────────────────────────────────────────── */
-#cv-footer {
-  background: #020304;
-  text-align: center;
-  padding: 2rem;
-  color: #2A3240;
-  font-size: 0.78rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.03);
-  font-weight: 400;
-}
+#cv-footer { display: none; }
 
 /* ── Scroll reveal ─────────────────────────────────────────────────────────── */
 .reveal {
