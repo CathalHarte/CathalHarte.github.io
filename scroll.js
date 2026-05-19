@@ -2,14 +2,12 @@
 const THEMES = {
   hero:       { navBg: 'rgba(255,255,255,0.92)', fg: '#0A0A0A', muted: '#4A4A4A' },
   about:      { navBg: 'rgba(255,255,255,0.92)', fg: '#0A0A0A', muted: '#4A4A4A' },
-  project:    { navBg: 'rgba(0,8,20,0.98)',      fg: '#C8D0E0', muted: '#5A7090' },
-  terapet:    { navBg: 'rgba(0,8,20,0.98)',      fg: '#C8D0E0', muted: '#5A7090' },
-  experience: { navBg: 'rgba(0,13,28,0.97)',     fg: '#C8D0E0', muted: '#5A7090' },
-  pullquote:  { navBg: 'rgba(0,13,28,0.97)',     fg: '#C8D0E0', muted: '#5A7090' },
-  press:      { navBg: 'rgba(0,10,21,0.97)',     fg: '#C8D0E0', muted: '#506080' },
+  project:    { navBg: 'rgba(0,13,28,0.97)',     fg: '#C8D0E0', muted: '#4E6080' },
+  pullquote:  { navBg: 'rgba(0,13,28,0.97)',     fg: '#C8D0E0', muted: '#4E6080' },
+  press:      { navBg: 'rgba(0,13,28,0.97)',     fg: '#C8D0E0', muted: '#4E6080' },
+  terapet:    { navBg: 'rgba(0,13,28,0.97)',     fg: '#C8D0E0', muted: '#4E6080' },
   skills:     { navBg: 'rgba(250,249,247,0.92)', fg: '#0A0A0A', muted: '#4A4A4A' },
-  education:  { navBg: 'rgba(4,6,8,0.98)',       fg: '#C0C8D8', muted: '#486070' },
-  interests:  { navBg: 'rgba(6,8,16,0.98)',      fg: '#C0C8D8', muted: '#465568' },
+  interests:  { navBg: 'rgba(4,6,8,0.98)',        fg: '#C0C8D8', muted: '#465568' },
   contact:    { navBg: 'rgba(2,3,4,0.99)',       fg: '#B8C0D0', muted: '#404E60' },
 };
 
