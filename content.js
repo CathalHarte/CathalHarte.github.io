@@ -92,24 +92,25 @@ const CV = {
       subtitle: 'Restoring natural walking after chronic spinal cord injury',
       desc:     'A cortical implant decodes movement intent wirelessly, in real time, driving a spinal stimulator that reawakens circuits below the injury. I built the clinical software that made it work — and made it work in patients\' homes.',
       embedUrl: 'https://www.youtube.com/embed/AARVY-3oDRQ?rel=0',
+      more:     { label: 'In the news →', url: 'neurotech.html' },
     },
   ],
 
   terapet: {
     badge:    'ISO 13485:2016 Certified',
-    name:     'Terapet',
-    subtitle: 'Particle therapy QA · Total-body PET imaging',
-    desc:     'Two product lines: Qualyscan, a real-time QA system for proton and particle therapy, and Nuclγscan, a CERN-founded total-body PET scanner. Building the software across both — from acquisition and clinical integration to regulatory clearance.',
+    name:     'Qualyscan',
+    subtitle: 'Real-time QA for proton and particle therapy',
+    desc:     'Qualyscan monitors the beam in real time during particle therapy treatment — catching deviations before they reach the patient. I build the software side, from acquisition pipelines to the path toward regulatory clearance. Terapet also makes Nuclγscan, a CERN-founded total-body PET scanner.',
     links: [
-      { label: 'ISO 13485:2016 certification', url: 'https://terapet.ch/terapet-achieves-iso-134852016-certification/', note: 'News' },
-      { label: 'Webinars I host',              url: 'https://terapet.ch/webinars/',                                       note: 'Qualyscan' },
-      { label: 'PTCOG 2026',                   url: 'https://terapet.ch/ptcog-2026/',                                     note: 'Qualyscan', upcoming: true },
+      { label: 'Webinars I host', url: 'https://terapet.ch/webinars/',      note: 'Qualyscan' },
+      { label: 'PTCOG 2026',      url: 'https://terapet.ch/ptcog-2026/',    note: 'Qualyscan', upcoming: true },
     ],
+    more: { label: 'More on nuclear medicine →', url: 'nuclear.html' },
   },
 
   interests: {
     body: 'Deliberately staying away from the mainstream — no algorithmic feeds, no social media recommendations. I read {s:Noema}, {b:Aeon}, and {y:Equator} via newsletters.',
-    cta:  'Drop me an email to talk about the revolution.',
+    cta:  'Essays coming.',
   },
 
   pullquote: {
@@ -143,7 +144,7 @@ function markup(str) {
   document.title = 'CV — ' + data.name;
 
   document.getElementById('nav-logo').textContent = data.initials;
-  const navSections = ['about', 'project', 'press', 'interests', 'contact'];
+  const navSections = ['about', 'project', 'terapet', 'interests', 'contact'];
   document.getElementById('nav-links').innerHTML = navSections
     .map(s => `<li><a href="#${s}">${s.charAt(0).toUpperCase() + s.slice(1)}</a></li>`)
     .join('');
@@ -153,8 +154,6 @@ function markup(str) {
     renderHero(data),
     renderAbout(data),
     renderProject(data),
-    renderPullquote(data),
-    renderPress(data),
     renderTerapet(data),
     renderInterests(data),
     renderContact(data),
@@ -291,6 +290,7 @@ function renderProject(d) {
             <h3 class="project-name">${p.name}</h3>
             <p class="project-subtitle">${p.subtitle}</p>
             <p class="project-desc">${p.desc}</p>
+            <a href="${p.more.url}" class="card-more">${p.more.label}</a>
           </div>
           <div class="project-video">
             <iframe src="${p.embedUrl}" title="${p.name}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -318,6 +318,7 @@ function renderTerapet(d) {
             <p class="project-subtitle">${t.subtitle}</p>
             <p class="project-desc">${t.desc}</p>
             <div class="tlinks">${links}</div>
+            <a href="${t.more.url}" class="card-more">${t.more.label}</a>
           </div>
         </div>
       </div>
@@ -326,10 +327,10 @@ function renderTerapet(d) {
 
 function renderInterests(d) {
   const i = d.interests;
-  return sectionWrap('interests', 'Interests', 'Outside the feed', `
+  return sectionWrap('interests', 'Writing', 'Outside the feed', `
     <div class="reveal interests-body">
       <p>${markup(i.body)}</p>
-      <p class="interests-cta"><a href="mailto:${d.contact.email}">${i.cta}</a></p>
+      <p class="interests-cta">${i.cta}</p>
     </div>
   `);
 }

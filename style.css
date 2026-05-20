@@ -594,6 +594,73 @@ h2 {
   font-weight: 500;
 }
 
+/* ── Card more link ────────────────────────────────────────────────────────── */
+.card-more {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FF5500;
+  text-decoration: none;
+  margin-top: 1.4rem;
+  transition: color 0.15s, letter-spacing 0.15s;
+}
+
+.card-more:hover {
+  color: #FF7733;
+  letter-spacing: 0.14em;
+}
+
+/* ── Sub-page intro (white header section on neurotech.html / nuclear.html) ─ */
+#page-intro {
+  background-color: #FFFFFF;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+  color: #0A0A0A;
+  --muted: #4A4A4A;
+  padding: 7rem 0 5rem;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #FF5500;
+  text-decoration: none;
+  margin-bottom: 2rem;
+  transition: color 0.15s;
+}
+
+.back-link:hover { color: #CC4400; }
+
+.back-link::before {
+  content: '←';
+  font-style: normal;
+}
+
+.page-title {
+  font-family: 'Source Serif 4', serif;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 800;
+  line-height: 1.0;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.8rem;
+}
+
+.page-desc {
+  font-size: 1rem;
+  color: #5A5A5A;
+  max-width: 52ch;
+  line-height: 1.7;
+  margin-top: 0.5rem;
+}
+
 /* ── Interests ─────────────────────────────────────────────────────────────── */
 .interests-body p {
   font-size: 1.05rem;
@@ -604,17 +671,11 @@ h2 {
 
 .interests-cta {
   margin-top: 1.5rem !important;
+  font-size: 0.85rem;
+  color: var(--muted, #465568);
+  letter-spacing: 0.05em;
+  font-style: italic;
 }
-
-.interests-cta a {
-  color: #FFD100;
-  text-decoration: none;
-  font-size: 1.05rem;
-  font-weight: 500;
-  transition: color 0.15s;
-}
-
-.interests-cta a:hover { color: #FFDD44; }
 
 /* ── Pull quote ────────────────────────────────────────────────────────────── */
 blockquote {

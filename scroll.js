@@ -2,6 +2,7 @@
 const THEMES = {
   hero:       { navBg: 'rgba(255,255,255,0.92)', fg: '#0A0A0A', muted: '#4A4A4A' },
   about:      { navBg: 'rgba(255,255,255,0.92)', fg: '#0A0A0A', muted: '#4A4A4A' },
+  'page-intro': { navBg: 'rgba(255,255,255,0.92)', fg: '#0A0A0A', muted: '#4A4A4A' },
   project:    { navBg: 'rgba(0,13,28,0.97)',     fg: '#C8D0E0', muted: '#4E6080' },
   pullquote:  { navBg: 'rgba(0,13,28,0.97)',     fg: '#C8D0E0', muted: '#4E6080' },
   press:      { navBg: 'rgba(0,13,28,0.97)',     fg: '#C8D0E0', muted: '#4E6080' },
