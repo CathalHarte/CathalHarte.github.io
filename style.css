@@ -614,6 +614,30 @@ h2 {
   letter-spacing: 0.14em;
 }
 
+.card-more--ghost {
+  color: var(--muted);
+  margin-top: 0.6rem;
+}
+
+.card-more--ghost:hover {
+  color: #C8D0E0;
+}
+
+.interests-latest {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.4rem;
+}
+
+.interests-latest-label {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.35rem;
+}
+
 /* ── Sub-page intro (white header section on neurotech.html / nuclear.html) ─ */
 #page-intro {
   background-color: #FFFFFF;
