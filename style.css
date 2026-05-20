@@ -804,10 +804,12 @@ h2 {
 
 /* ── Essay interruptions — author's voice breaking through ─────────────────── */
 .essay-interruption {
-  background-color: #000D1C;
+  background-color: #040608;
   background-image:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.025'/%3E%3C/svg%3E");
-  background-size: 200px 200px;
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.02'/%3E%3C/svg%3E"),
+    radial-gradient(ellipse 70% 55% at -5% 105%, rgba(255, 85, 0, 0.18) 0%, rgba(255, 85, 0, 0.04) 40%, transparent 65%),
+    radial-gradient(ellipse 40% 30% at 8%  90%,  rgba(255, 209, 0, 0.10) 0%, transparent 50%);
+  background-size: 200px 200px, cover, cover;
   padding: 5rem 0;
   color: #C8D0E0;
 }
@@ -822,7 +824,7 @@ h2 {
   font-weight: 700;
   font-style: normal;
   line-height: 1.35;
-  color: #E8ECF4;
+  color: #EEF0F4;
   margin: 0 0 1.4rem;
   quotes: none;
 }
@@ -840,7 +842,7 @@ h2 {
   font-size: 0.7rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #FF5500;
+  color: #FFD100;
   font-weight: 600;
   font-family: 'Inter', sans-serif;
 }
