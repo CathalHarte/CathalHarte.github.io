@@ -66,6 +66,30 @@ Sources for every factual claim on the site. Where a claim originates in convers
 
 ---
 
+## Rehabilitation Robotics + Neuromodulation (neurotech.html)
+
+| Claim | Source |
+|---|---|
+| Badge: "Science Robotics · March 2025" | [Hankov et al., Science Robotics, 2025](https://www.science.org/doi/10.1126/scirobotics.adn5564) |
+| "Paralysis severs the voluntary muscle activation that rehabilitation robotics depend on" | [Hankov et al., Science Robotics, 2025](https://www.science.org/doi/10.1126/scirobotics.adn5564) |
+| Five participants, immediate and sustained muscle activation | [Hankov et al., Science Robotics, 2025](https://www.science.org/doi/10.1126/scirobotics.adn5564) |
+| Device-agnostic, operable by non-experts | [Hankov et al., Science Robotics, 2025](https://www.science.org/doi/10.1126/scirobotics.adn5564) |
+| Outdoor walking and cycling achieved | [Hankov et al., Science Robotics, 2025](https://www.science.org/doi/10.1126/scirobotics.adn5564) |
+
+---
+
+## Haemodynamic Stability (neurotech.html)
+
+| Claim | Source |
+|---|---|
+| Badge: "Nature Medicine · September 2025" | [Phillips et al., Nature Medicine, 2025](https://www.nature.com/articles/s41591-025-03614-w) |
+| Stimulation targets the last three thoracic segments, not lumbosacral | [Phillips et al., Nature Medicine, 2025](https://www.nature.com/articles/s41591-025-03614-w) |
+| 14 participants, instant pressor response | [Phillips et al., Nature Medicine, 2025](https://www.nature.com/articles/s41591-025-03614-w) |
+| 1,479 participants studied for burden of hypotensive complications | [Phillips et al., Nature Medicine, 2025](https://www.nature.com/articles/s41591-025-03614-w) |
+| Eliminated need for conservative treatments | [Phillips et al., Nature Medicine, 2025](https://www.nature.com/articles/s41591-025-03614-w) |
+
+---
+
 ## Pull quote (neurotech.html)
 
 | Claim | Source |
@@ -79,9 +103,9 @@ Sources for every factual claim on the site. Where a claim originates in convers
 | Outlet | URL | Claim verified |
 |---|---|---|
 | Silicon Republic | [Link](https://www.siliconrepublic.com/machines/spinal-cord-stimulation-neurorestore-cathal-harte) | Profile of Cathal Harte on the BSI project |
-| CNN | [Link](https://www.cnn.com/2023/05/24/health/walk-after-paralysis-with-implant-scn/index.html) | News report on the BSI walking paper |
-| YouTube · AFP | [Link](https://www.youtube.com/watch?v=AARVY-3oDRQ) | AFP video report |
-| Nature | [Link](https://www.nature.com/articles/s41586-023-06094-5) | Original research paper |
+| CNN | [Link](https://www.cnn.com/2023/05/24/health/walk-after-paralysis-with-implant-scn/index.html) | News report on the BSI walking paper (May 2023) |
+| Scientific American | [Link](https://www.scientificamerican.com/article/brain-spine-interface-allows-paralysed-man-to-walk-using-his-thoughts/) | Brain-Spine Interface Allows Paralyzed Man to Walk Using His Thoughts |
+| CBS News | [Link](https://www.cbsnews.com/news/paralyzed-man-walks-again-using-implants-connecting-brain-with-spinal-cord/) | Paralyzed man walks again using implants connecting brain with spinal cord |
 
 ---
 
