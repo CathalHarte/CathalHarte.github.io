@@ -14,8 +14,8 @@ const CV = {
   initials:     'CH',
   title:        'Medical Device Engineer',
   about: [
-    'I build clinical software for medical devices at the frontier of neurotechnology and nuclear medicine — from laboratory prototypes to systems deployed in patients\' homes.',
-    'At NeuroRestore and Onward Medical, I led the software that powered the Brain-Spine Interface: a digital bridge that restored natural walking to patients with chronic paralysis. The work was published in Nature in 2023 and named Physics World Breakthrough of the Year. I now work at Terapet, a CERN spin-off, developing software for Nuclγscan — a next-generation total-body PET scanner for precision medicine.',
+    'I build medical devices at the frontier of neurotechnology and nuclear medicine — from laboratory prototypes to systems deployed in patients\' homes.',
+    'At NeuroRestore, I led the software and system development that powered the Brain-Spine Interface: a digital bridge that restored natural walking to patients with chronic paralysis. The work was published in Nature in 2023 and named Physics World Breakthrough of the Year. I now work at Terapet, a CERN spin-off, developing software for Nuclγscan — a next-generation total-body PET scanner for precision medicine.',
   ],
 
   experience: [
@@ -91,21 +91,21 @@ const CV = {
       name:     'Brain-Spine Interface',
       subtitle: 'Restoring natural walking after chronic spinal cord injury',
       desc:     'A cortical implant decodes movement intent wirelessly, in real time, driving a spinal stimulator that reawakens circuits below the injury. I built the clinical software that made it work — and made it work in patients\' homes.',
-      embedUrl: 'https://www.youtube.com/embed/AARVY-3oDRQ?rel=0',
+      watchUrl: 'https://www.youtube.com/watch?v=AARVY-3oDRQ',
+      thumbUrl: 'https://img.youtube.com/vi/AARVY-3oDRQ/maxresdefault.jpg',
       more:     { label: 'More neurotech →', url: 'neurotech.html' },
     },
   ],
 
   terapet: {
     badge:    'ISO 13485:2016 Certified',
-    name:     'Qualyscan',
-    subtitle: 'Real-time QA for proton and particle therapy',
-    desc:     'Qualyscan monitors the beam in real time during particle therapy treatment — catching deviations before they reach the patient. I build the software side, from acquisition pipelines to the path toward regulatory clearance. Terapet also makes Nuclγscan, a CERN-founded total-body PET scanner.',
+    name:     'Nuclγscan',
+    subtitle: 'Total-body PET imaging · CERN detector technology',
+    desc:     'A next-generation total-body PET scanner built on CERN detector technology — designed for precision medicine and whole-body imaging at a level not previously possible. I build the software across the full stack: acquisition, clinical integration, and the path to regulatory clearance. The same underlying technology is also being applied for real-time proton therapy QA.',
     links: [
-      { label: 'Webinars I host', url: 'https://terapet.ch/webinars/',      note: 'Qualyscan' },
-      { label: 'PTCOG 2026',      url: 'https://terapet.ch/ptcog-2026/',    note: 'Qualyscan', upcoming: true },
+      { label: 'PTCOG 2026', url: 'https://terapet.ch/ptcog-2026/', note: 'Qualγscan', upcoming: true },
     ],
-    more: { label: 'More on nuclear medicine →', url: 'nuclear.html' },
+    more: { label: 'More nuclear medicine →', url: 'nuclear.html' },
   },
 
   interests: {
@@ -180,7 +180,7 @@ function renderHero(d) {
 
 function renderAbout(d) {
   const paras = d.about.map(p => `<p>${markup(p)}</p>`).join('');
-  return sectionWrap('about', 'About', 'A bit about me', `
+  return sectionWrap('about', 'About', 'What I build', `
     <div class="reveal about-body">${paras}</div>
   `);
 }
@@ -293,9 +293,10 @@ function renderProject(d) {
             <p class="project-desc">${p.desc}</p>
             <a href="${p.more.url}" class="card-more">${p.more.label}</a>
           </div>
-          <div class="project-video">
-            <iframe src="${p.embedUrl}" title="${p.name}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
+          <a href="${p.watchUrl}" class="project-video" target="_blank" rel="noopener" aria-label="Watch ${p.name} on YouTube">
+            <img src="${p.thumbUrl}" alt="${p.name}" class="project-video-thumb">
+            <span class="project-video-play"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg> Watch on YouTube</span>
+          </a>
         </div>
       </div>
     </section>`;
