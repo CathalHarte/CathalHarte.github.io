@@ -643,8 +643,7 @@ h2 {
 .back-link:hover { color: #CC4400; }
 
 .back-link::before {
-  content: '←';
-  font-style: normal;
+  content: '';
 }
 
 .page-title {
