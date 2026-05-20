@@ -27,8 +27,8 @@ const CV = {
     },
     {
       outlet: 'CNN',
-      title:  "AI and implants form a 'digital bridge' to help a paralysed man move",
-      url:    'https://www.cnn.com/2023/09/27/health/digital-bridge-implants-paralysis/index.html',
+      title:  'Man with paralysis walks naturally after brain and spine implants',
+      url:    'https://www.cnn.com/2023/05/24/health/walk-after-paralysis-with-implant-scn/index.html',
       type:   'News',
     },
     {

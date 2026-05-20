@@ -13,7 +13,7 @@ Sources for every factual claim on the site. Where a claim originates in convers
 | "At NeuroRestore, I led the software and system development" | Cathal Harte (direct) |
 | "a digital bridge that restores natural walking to patients with chronic paralysis" | [Nature, May 2023](https://www.nature.com/articles/s41586-023-06094-5) |
 | "Published in Nature in 2023" | [Nature, May 2023](https://www.nature.com/articles/s41586-023-06094-5) |
-| "named Physics World Breakthrough of the Year" | [Physics World, Dec 2023](https://physicsworld.com/a/2023-physics-world-breakthrough-of-the-year-restoring-natural-walking-after-spinal-cord-injury/) |
+| "named Physics World Breakthrough of the Year" | [Physics World, Dec 2023](https://physicsworld.com/a/brain-computer-interface-that-allowed-a-paralysed-man-to-walk-is-the-physics-world-2023-breakthrough-of-the-year/) |
 | "Terapet, a CERN spin-off" | [CERN Knowledge Transfer](https://kt.cern/startups/terapet) |
 | "Nuclγscan — a next-generation total-body PET scanner for precision medicine" | [Terapet website](https://terapet.ch/) |
 
@@ -23,7 +23,7 @@ Sources for every factual claim on the site. Where a claim originates in convers
 
 | Claim | Source |
 |---|---|
-| Badge: "Physics World Breakthrough of the Year 2023" | [Physics World, Dec 2023](https://physicsworld.com/a/2023-physics-world-breakthrough-of-the-year-restoring-natural-walking-after-spinal-cord-injury/) |
+| Badge: "Physics World Breakthrough of the Year 2023" | [Physics World, Dec 2023](https://physicsworld.com/a/brain-computer-interface-that-allowed-a-paralysed-man-to-walk-is-the-physics-world-2023-breakthrough-of-the-year/) |
 | "A cortical implant decodes movement intent wirelessly, in real time" | [Nature, May 2023](https://www.nature.com/articles/s41586-023-06094-5) |
 | "driving a spinal stimulator that reawakens circuits below the injury" | [Nature, May 2023](https://www.nature.com/articles/s41586-023-06094-5) |
 | "I built the clinical system that made it work — and made it work in patients' homes" | Cathal Harte (direct) + [Silicon Republic profile](https://www.siliconrepublic.com/machines/spinal-cord-stimulation-neurorestore-cathal-harte) |
@@ -79,7 +79,7 @@ Sources for every factual claim on the site. Where a claim originates in convers
 | Outlet | URL | Claim verified |
 |---|---|---|
 | Silicon Republic | [Link](https://www.siliconrepublic.com/machines/spinal-cord-stimulation-neurorestore-cathal-harte) | Profile of Cathal Harte on the BSI project |
-| CNN | [Link](https://www.cnn.com/2023/09/27/health/digital-bridge-implants-paralysis/index.html) | News report on the digital bridge / paralysis story |
+| CNN | [Link](https://www.cnn.com/2023/05/24/health/walk-after-paralysis-with-implant-scn/index.html) | News report on the BSI walking paper |
 | YouTube · AFP | [Link](https://www.youtube.com/watch?v=AARVY-3oDRQ) | AFP video report |
 | Nature | [Link](https://www.nature.com/articles/s41586-023-06094-5) | Original research paper |
 
