@@ -101,7 +101,7 @@ const CV = {
     badge:    'ISO 13485:2016 Certified',
     name:     'Nuclγscan',
     subtitle: 'Total-body PET imaging · CERN detector technology',
-    desc:     'A next-generation total-body PET scanner built on CERN detector technology — designed for precision medicine and whole-body imaging at a level not previously possible. I build the software across the full stack: acquisition, clinical integration, and the path to regulatory clearance. The same underlying technology is also being applied for real-time proton therapy QA.',
+    desc:     'A next-generation total-body PET scanner designed for precision medicine and whole-body imaging at a level not previously possible. I build the software across the full stack: acquisition, reconstruction, and clinical integration, in addition to leading the risk management activities across the whole design. The same underlying technology is also being applied for real-time proton therapy QA.',
     links: [
       { label: 'PTCOG 2026', url: 'https://terapet.ch/ptcog-2026/', note: 'Qualγscan', upcoming: true },
     ],
