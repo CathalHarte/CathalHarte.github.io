@@ -671,11 +671,17 @@ h2 {
 
 .interests-cta {
   margin-top: 1.5rem !important;
-  font-size: 0.85rem;
-  color: var(--muted, #465568);
-  letter-spacing: 0.05em;
-  font-style: italic;
 }
+
+.interests-cta a {
+  color: #FFD100;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  transition: color 0.15s;
+}
+
+.interests-cta a:hover { color: #FFDD44; }
 
 /* ── Pull quote ────────────────────────────────────────────────────────────── */
 blockquote {

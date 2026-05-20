@@ -92,7 +92,7 @@ const CV = {
       subtitle: 'Restoring natural walking after chronic spinal cord injury',
       desc:     'A cortical implant decodes movement intent wirelessly, in real time, driving a spinal stimulator that reawakens circuits below the injury. I built the clinical software that made it work — and made it work in patients\' homes.',
       embedUrl: 'https://www.youtube.com/embed/AARVY-3oDRQ?rel=0',
-      more:     { label: 'In the news →', url: 'neurotech.html' },
+      more:     { label: 'More neurotech →', url: 'neurotech.html' },
     },
   ],
 
@@ -110,7 +110,8 @@ const CV = {
 
   interests: {
     body: 'Deliberately staying away from the mainstream — no algorithmic feeds, no social media recommendations. I read {s:Noema}, {b:Aeon}, and {y:Equator} via newsletters.',
-    cta:  'Essays coming.',
+    cta:  'Drop me an email to talk about the revolution.',
+    more: { label: 'More thoughts →', url: 'thoughts.html' },
   },
 
   pullquote: {
@@ -330,7 +331,8 @@ function renderInterests(d) {
   return sectionWrap('interests', 'Writing', 'Outside the feed', `
     <div class="reveal interests-body">
       <p>${markup(i.body)}</p>
-      <p class="interests-cta">${i.cta}</p>
+      <p class="interests-cta"><a href="mailto:${d.contact.email}">${i.cta}</a></p>
+      <a href="${i.more.url}" class="card-more">${i.more.label}</a>
     </div>
   `);
 }
