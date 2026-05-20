@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Writing — Cathal Harte</title>
+  <title>Essay title — Cathal Harte</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,700;0,8..60,800;1,8..60,700&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -14,7 +14,8 @@
   <nav id="nav">
     <a href="index.html" class="logo" id="nav-logo">CH</a>
     <ul id="nav-links">
-      <li><a href="#latest">Latest</a></li>
+      <li><a href="thoughts.html">Writing</a></li>
+      <li><a href="#comments">Comments</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -24,66 +25,53 @@
     <!-- White intro -->
     <section id="page-intro">
       <div class="section-inner">
-        <a href="index.html" class="back-link"> Home</a>
-        <span class="section-label">Writing</span>
-        <h1 class="page-title">Outside the feed</h1>
-        <p class="page-desc">Philosophy, ethics, politics, psychology — whatever grabs my interest. No algorithmic recommendations involved in the making of any of this.</p>
+        <a href="thoughts.html" class="back-link"> Writing</a>
+        <span class="section-label">12 June 2026</span>
+        <h1 class="page-title">Essay title goes here</h1>
       </div>
     </section>
 
-    <!-- Latest essay -->
-    <section id="latest">
+    <!-- Essay body — white, prose-optimised -->
+    <section id="essay-body">
+      <div class="section-inner">
+        <div class="essay-prose reveal">
+
+          <p>Opening paragraph. This is what draws the reader in — make it count. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+          <p>Second paragraph. Give it room. The line height and measure are set for comfortable long-form reading. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+          <h2>A section heading</h2>
+
+          <p>Paragraphs after a heading. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+          <blockquote>
+            <p>A pull quote or external citation goes here, if you have one worth highlighting.</p>
+            <cite>Source name</cite>
+          </blockquote>
+
+          <p>Continuing after the quote. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Comments — tongue in cheek -->
+    <section id="comments">
       <div class="section-inner">
         <div class="section-header reveal">
-          <span class="section-label">Latest</span>
-          <h2>Most recent</h2>
+          <span class="section-label">Comments</span>
+          <h2>0 comments</h2>
           <div class="divider"></div>
         </div>
-
-        <!--
-          ═══════════════════════════════════════════════════════
-          TO ADD A NEW ESSAY:
-          1. Copy essay-template.html → e.g. essay-on-attention.html
-          2. Fill in the content
-          3. Replace the placeholder block below with:
-
-          <a href="essay-on-attention.html" class="essay-card reveal">
-            <span class="essay-date">12 June 2026</span>
-            <h3 class="essay-title">Your essay title here</h3>
-            <p class="essay-excerpt">One or two sentences that make someone want to read it.</p>
-            <span class="essay-read">Read →</span>
-          </a>
-
-          4. Move the previous essay-card into the #archive section below.
-          ═══════════════════════════════════════════════════════
-        -->
-
-        <div class="essay-coming reveal">
-          <p>First essay coming.</p>
+        <div class="reveal comments-body">
+          <div class="comments-mock" aria-hidden="true">
+            <span class="comments-mock-prompt">Write a comment…</span>
+          </div>
+          <p class="comments-cta">Email me. You might actually start a real discussion, instead of shouting into the void. If enough people email me about the same piece I'll put you all in a thread together.</p>
+          <a href="mailto:cathal.harte@proton.me" class="card-more">cathal.harte@proton.me →</a>
         </div>
-
       </div>
     </section>
-
-    <!-- Archive — hidden until there are 2+ essays
-    <section id="archive">
-      <div class="section-inner">
-        <div class="section-header reveal">
-          <span class="section-label">Archive</span>
-          <h2>All essays</h2>
-          <div class="divider"></div>
-        </div>
-        <ol class="essay-archive stagger" reversed>
-          <li>
-            <a href="essay-on-attention.html" class="essay-archive-item">
-              <span class="essay-archive-date">12 June 2026</span>
-              <span class="essay-archive-title">Your essay title here</span>
-            </a>
-          </li>
-        </ol>
-      </div>
-    </section>
-    -->
 
     <!-- Contact -->
     <section id="contact">
@@ -99,7 +87,7 @@
             cathal.harte@proton.me
           </a>
           <a href="https://terapet.ch/" class="contact-link" target="_blank" rel="noopener">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
             Terapet
           </a>
           <a href="https://www.linkedin.com/in/cathal-harte" class="contact-link" target="_blank" rel="noopener">

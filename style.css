@@ -685,6 +685,200 @@ h2 {
 
 .interests-cta a:hover { color: #FFDD44; }
 
+/* ── Essay hub (#latest, #archive) ────────────────────────────────────────── */
+#latest, #archive {
+  background-color: #000D1C;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.025'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+  color: #C8D0E0;
+  --muted: #4E6080;
+}
+
+.essay-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  padding: 2rem 2.5rem;
+  background: linear-gradient(135deg, rgba(255, 85, 0, 0.05) 0%, rgba(0, 8, 20, 0) 55%);
+  border: 1px solid rgba(255, 85, 0, 0.18);
+  border-radius: 8px;
+  transition: border-color 0.15s, background 0.15s, transform 0.15s;
+}
+
+.essay-card:hover {
+  border-color: rgba(255, 85, 0, 0.4);
+  background: linear-gradient(135deg, rgba(255, 85, 0, 0.08) 0%, rgba(0, 8, 20, 0) 55%);
+  transform: translateY(-2px);
+}
+
+.essay-date {
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #FF5500;
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+}
+
+.essay-title {
+  font-family: 'Source Serif 4', serif;
+  font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+  font-weight: 800;
+  color: #F0F4FF;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  margin-bottom: 0.8rem;
+}
+
+.essay-excerpt {
+  font-size: 0.93rem;
+  color: var(--muted, #4E6080);
+  line-height: 1.7;
+  max-width: 58ch;
+  margin-bottom: 1.2rem;
+}
+
+.essay-read {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FF5500;
+}
+
+.essay-coming {
+  padding: 2.5rem 0 1rem;
+  color: var(--muted, #4E6080);
+  font-size: 0.93rem;
+  font-style: italic;
+}
+
+/* Archive list */
+.essay-archive {
+  list-style: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.essay-archive-item {
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.15s;
+}
+
+.essay-archive-item:hover .essay-archive-title { color: #E0E8F8; }
+
+.essay-archive-date {
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #FF5500;
+  font-weight: 600;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.essay-archive-title {
+  font-size: 0.93rem;
+  color: var(--muted, #4E6080);
+  transition: color 0.15s;
+}
+
+/* ── Essay body (white, prose-optimised) ───────────────────────────────────── */
+#essay-body {
+  background-color: #FFFFFF;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+  color: #0A0A0A;
+  --muted: #4A4A4A;
+  padding: 4rem 0 5rem;
+}
+
+.essay-prose {
+  max-width: 65ch;
+}
+
+.essay-prose p {
+  font-size: 1.08rem;
+  line-height: 1.85;
+  color: #1A1A1A;
+  margin-bottom: 1.4rem;
+}
+
+.essay-prose h2 {
+  font-family: 'Source Serif 4', serif;
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: #0A0A0A;
+  margin: 2.5rem 0 1rem;
+  letter-spacing: -0.01em;
+}
+
+.essay-prose blockquote {
+  border-left: 3px solid #FF5500;
+  padding: 0.2rem 0 0.2rem 1.8rem;
+  margin: 2rem 0;
+}
+
+.essay-prose blockquote p {
+  font-family: 'Source Serif 4', serif;
+  font-size: 1.12rem;
+  font-style: italic;
+  font-weight: 700;
+  color: #2A2A2A;
+  margin-bottom: 0.5rem;
+}
+
+.essay-prose blockquote cite {
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #FF5500;
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* ── Comments section ──────────────────────────────────────────────────────── */
+#comments {
+  background-color: #040608;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.02'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+  color: #C0C8D8;
+  --muted: #465568;
+}
+
+.comments-body { max-width: 52ch; }
+
+.comments-mock {
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 5px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 2rem;
+  cursor: not-allowed;
+}
+
+.comments-mock-prompt {
+  font-size: 0.9rem;
+  color: rgba(192, 200, 216, 0.25);
+  font-style: italic;
+  user-select: none;
+}
+
+.comments-cta {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #A0ACBC;
+  margin-bottom: 1.2rem;
+}
+
 /* ── Pull quote ────────────────────────────────────────────────────────────── */
 blockquote {
   border-left: 3px solid #FF5500;
