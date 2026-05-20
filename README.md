@@ -1,76 +1,66 @@
-# Personal Website — CV
+# cathalharte.com
 
-A simple static website built as an online CV. No frameworks, no build step — just HTML, CSS, and vanilla JS. Intended as a clean starting point for experimenting with agentic coding: small enough to reason about completely, expressive enough to be worth building.
+A personal website — not a CV, not a portfolio. More a curated account of the work I find worth talking about: neurotechnology, nuclear medicine, and the odd essay.
+
+Built as a pure static site (HTML, CSS, vanilla JS) with no framework and no build step. Hosted on Infomaniak.
 
 ---
 
-## Colour Scheme
+## Pages
 
-| Role | Colour |
+| File | Purpose |
 |---|---|
-| Primary accent | Yellow / Gold |
-| Secondary accent | Orange |
-| Highlight / links | Sky blue |
-| Deep accent | Sea blue |
-| Body text | Black (light sections) / White (dark sections) |
-
-The palette shifts across the page: light warm tones at the top, cool dark tones at the bottom. Accent colours adapt for legibility as the background changes.
-
----
-
-## Intended Experience
-
-### Scroll behaviour
-- Elements move as the user scrolls — not just fade in, but shift, slide, and settle
-- The page transitions from a **light** warm feel (hero) to a **dark** cool feel (contact) as the user scrolls down
-- Key words and phrases light up in accent colours after their section fades in, drawing the eye
-
-### Attention direction
-- Important words within paragraphs are coloured (yellow, orange, sky, sea) rather than bolded
-- Section reveals are staggered so the eye is drawn to the most important element first
-- Hero content drifts slightly on parallax as you scroll away from it
+| `index.html` | Home — intro, Brain-Spine Interface, Nuclγscan, writing |
+| `neurotech.html` | Brain-Spine Interface — quote, press, links |
+| `nuclear.html` | Nuclear medicine — Nuclγscan & Qualγscan (in progress) |
+| `thoughts.html` | Writing — essays hub (in progress) |
 
 ---
 
 ## File Structure
 
-Content and style are kept deliberately separate.
+Content, style, and behaviour are kept in separate files.
 
 ```
 /
-├── index.html    # Bare skeleton — loads assets, defines no content or styles
-├── content.js    # All page text as plain data objects — edit your CV here
-├── style.css     # All visual decisions: colours, typography, animation
-├── scroll.js     # Scroll-driven behaviour: theme transitions, reveals, parallax
-└── README.md
+├── index.html       # Skeleton only — no content, no inline styles
+├── content.js       # All text as plain data objects + render functions
+├── style.css        # All visual decisions: colour, type, animation
+├── scroll.js        # Scroll-driven behaviour: theme transitions, reveals, parallax
+├── neurotech.html   # Brain-Spine Interface sub-page (static HTML)
+├── nuclear.html     # Nuclear medicine sub-page (static HTML)
+└── thoughts.html    # Writing sub-page (static HTML)
 ```
 
-**To update your CV:** open `content.js` and edit the `CV` object at the top of the file. The render logic is below a clear separator — no need to touch it.
+Sub-pages are fully static HTML — they share `style.css` and `scroll.js` but don't use `content.js`.
 
 ---
 
-## Colour Markup
+## Editing content
 
-Inside any text field in `content.js`, you can colour individual words or phrases:
+Open `content.js` and edit the `CV` object at the top. The render logic lives below a clear separator — no need to touch it.
+
+### Colour markup
+
+Inside any text field in `content.js`, individual words or phrases can be coloured:
 
 | Syntax | Colour |
 |---|---|
-| `{y:your text}` | Yellow / Gold |
+| `{y:your text}` | Yellow / gold |
 | `{o:your text}` | Orange |
 | `{s:your text}` | Sky blue |
 | `{b:your text}` | Sea blue |
 
-Example:
-```
-'I build {s:fast, accessible web applications} with a focus on {y:clean architecture}.'
-```
+Example: `'I read {s:Noema} and {y:Equator} via newsletters.'`
 
 ---
 
-## Agentic Coding Notes
+## Design
 
-This project is a good sandbox for agentic coding because:
-- The scope is small and the output is immediately visual
-- Design decisions (colour, timing, layout) are separable from content decisions
-- Changes can be verified instantly in a browser preview
-- There is no build pipeline to reason about
+See [`STYLE.md`](STYLE.md) for the full design rationale and visual language.
+
+---
+
+## Sources
+
+See [`SOURCES.md`](SOURCES.md) for traceability of all factual claims on the site.

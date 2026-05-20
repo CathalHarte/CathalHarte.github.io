@@ -15,37 +15,7 @@ const CV = {
   title:        'Medical Device Engineer',
   about: [
     'I build medical devices at the frontier of neurotechnology and nuclear medicine — from laboratory prototypes to systems deployed in patients\' homes.',
-    'At NeuroRestore, I led the software and system development that powered the Brain-Spine Interface: a digital bridge that restored natural walking to patients with chronic paralysis. The work was published in Nature in 2023 and named Physics World Breakthrough of the Year. I now work at Terapet, a CERN spin-off, developing software for Nuclγscan — a next-generation total-body PET scanner for precision medicine.',
-  ],
-
-  experience: [
-    {
-      org:  'Terapet SA',
-      role: 'Software Lead',
-      date: '2023 – Present',
-      desc: 'Building the software backbone for Nuclγscan, a full-body PET scanner founded on CERN detector technology. Spanning acquisition pipelines, clinical integration, and the path toward regulatory clearance.',
-    },
-    {
-      org:  'NeuroRestore · Onward Medical',
-      role: 'Lead Clinical Software Engineer',
-      date: '2020 – 2023',
-      desc: 'Led development of the clinical software stack for the Brain-Spine Interface — a wireless digital bridge connecting cortical implants to epidural spinal stimulators. Approved for use in five clinical trials. Enabled home deployment of the system for the first time. Published in Nature, May 2023.',
-    },
-    {
-      org:  'Earlier experience',
-      role: 'Biomedical / Software Engineering',
-      date: '–',
-      desc: 'Prior roles in biomedical engineering and software development. Details to follow.',
-    },
-  ],
-
-  skills: [
-    { name: 'Clinical Software Dev.',   level: 'Expert' },
-    { name: 'Medical Device Systems',   level: 'Expert' },
-    { name: 'Python / C++',             level: 'Proficient' },
-    { name: 'Signal Processing',        level: 'Proficient' },
-    { name: 'Embedded / Real-time',     level: 'Proficient' },
-    { name: 'IEC 62304 / Regulatory',   level: 'Proficient' },
+    'At NeuroRestore, I led the software and system development that powered the Brain-Spine Interface: a digital bridge that restores natural walking to patients with chronic paralysis. The work was published in Nature in 2023 and named Physics World Breakthrough of the Year. I now work at Terapet, a CERN spin-off, developing software for Nuclγscan — a next-generation total-body PET scanner for precision medicine.',
   ],
 
   press: [
@@ -75,22 +45,12 @@ const CV = {
     },
   ],
 
-  awards: [],
-
-  education: [
-    {
-      degree: 'Degree — to be filled in',
-      school: 'University — to be filled in',
-      date:   '–',
-    },
-  ],
-
   projects: [
     {
       badge:    'Physics World Breakthrough of the Year 2023',
       name:     'Brain-Spine Interface',
       subtitle: 'Restoring natural walking after chronic spinal cord injury',
-      desc:     'A cortical implant decodes movement intent wirelessly, in real time, driving a spinal stimulator that reawakens circuits below the injury. I built the clinical software that made it work — and made it work in patients\' homes.',
+      desc:     'A cortical implant decodes movement intent wirelessly, in real time, driving a spinal stimulator that reawakens circuits below the injury. I built the clinical system that made it work — and made it work in patients\' homes.',
       watchUrl: 'https://www.youtube.com/watch?v=AARVY-3oDRQ',
       thumbUrl: 'https://img.youtube.com/vi/AARVY-3oDRQ/maxresdefault.jpg',
       more:     { label: 'More neurotech →', url: 'neurotech.html' },
@@ -100,7 +60,7 @@ const CV = {
   terapet: {
     badge:    'ISO 13485:2016 Certified',
     name:     'Nuclγscan',
-    subtitle: 'Total-body PET imaging · CERN detector technology',
+    subtitle: 'Total-body PET imaging · CERN spin-off technology',
     desc:     'A next-generation total-body PET scanner designed for precision medicine and whole-body imaging at a level not previously possible. I build the software across the full stack: acquisition, reconstruction, and clinical integration, in addition to leading the risk management activities across the whole design. The same underlying technology is also being applied for real-time proton therapy QA.',
     links: [
       { label: 'PTCOG 2026', url: 'https://terapet.ch/ptcog-2026/', note: 'Qualγscan', upcoming: true },
@@ -198,54 +158,6 @@ function renderExperience(d) {
   `);
 }
 
-function renderPress(d) {
-  const cards = d.press.map(p => `
-    <a href="${p.url}" class="press-card" target="_blank" rel="noopener">
-      <span class="press-type">${p.type}</span>
-      <span class="press-outlet">${p.outlet}</span>
-      <p class="press-title">${p.title}</p>
-    </a>`).join('');
-  return sectionWrap('press', 'Press', 'In the news', `
-    <div class="press-grid stagger">${cards}</div>
-  `);
-}
-
-function renderSkills(d) {
-  const cards = d.skills.map(s => `
-    <div class="skill-card">
-      <p class="skill-name">${s.name}</p>
-      <p class="skill-level">${s.level}</p>
-    </div>`).join('');
-  return sectionWrap('skills', 'Skills', 'What I work with', `
-    <div class="skill-grid stagger">${cards}</div>
-  `);
-}
-
-function renderEducation(d) {
-  const eduEntries = d.education.map(e => `
-    <div class="edu-entry">
-      <p class="edu-degree">${e.degree}</p>
-      <p class="edu-school">${e.school}</p>
-      <p class="edu-date">${e.date}</p>
-    </div>`).join('');
-
-  const awardsBlock = d.awards && d.awards.length ? `
-    <p class="section-sublabel reveal">Recognition</p>
-    <div class="stagger awards-list">
-      ${d.awards.map(a => `
-        <div class="award-entry">
-          <span class="award-name">${a.name}</span>
-          <span class="award-year">${a.year}</span>
-          <p class="award-desc">${a.desc}</p>
-        </div>`).join('')}
-    </div>` : '';
-
-  return sectionWrap('education', 'Education', 'Background', `
-    <div class="stagger">${eduEntries}</div>
-    ${awardsBlock}
-  `);
-}
-
 function renderContact(d) {
   const icons = {
     email:    `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>`,
@@ -336,17 +248,4 @@ function renderInterests(d) {
       <a href="${i.more.url}" class="card-more">${i.more.label}</a>
     </div>
   `);
-}
-
-function renderPullquote(d) {
-  const q = d.pullquote;
-  return `
-    <section id="pullquote">
-      <div class="section-inner">
-        <blockquote class="reveal">
-          <p>${q.text}</p>
-          <cite>${q.source}</cite>
-        </blockquote>
-      </div>
-    </section>`;
 }
