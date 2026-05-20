@@ -71,8 +71,7 @@ const CV = {
   interests: {
     body: 'Deliberately staying away from the mainstream — no algorithmic feeds, no social media recommendations. I read {s:Noema}, {b:Aeon}, and {y:Equator} via newsletters.',
     cta:  'Drop me an email to talk about the revolution.',
-    latest: { label: 'What the brain taught me about attention', url: 'essay-on-attention.html', date: 'May 2026' },
-    archive: { label: 'All writing →', url: 'thoughts.html' },
+    more: { label: 'More thoughts →', url: 'thoughts.html' },
   },
 
   pullquote: {
@@ -246,11 +245,7 @@ function renderInterests(d) {
     <div class="reveal interests-body">
       <p>${markup(i.body)}</p>
       <p class="interests-cta"><a href="mailto:${d.contact.email}">${i.cta}</a></p>
-      <div class="interests-latest">
-        <span class="interests-latest-label">Latest · ${i.latest.date}</span>
-        <a href="${i.latest.url}" class="card-more">${i.latest.label} →</a>
-      </div>
-      <a href="${i.archive.url}" class="card-more card-more--ghost">${i.archive.label}</a>
+      <a href="${i.more.url}" class="card-more">${i.more.label}</a>
     </div>
   `);
 }

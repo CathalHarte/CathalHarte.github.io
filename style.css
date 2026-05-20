@@ -614,29 +614,6 @@ h2 {
   letter-spacing: 0.14em;
 }
 
-.card-more--ghost {
-  color: var(--muted);
-  margin-top: 0.6rem;
-}
-
-.card-more--ghost:hover {
-  color: #C8D0E0;
-}
-
-.interests-latest {
-  display: flex;
-  flex-direction: column;
-  margin-top: 1.4rem;
-}
-
-.interests-latest-label {
-  font-size: 0.68rem;
-  font-weight: 600;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--muted);
-  margin-bottom: 0.35rem;
-}
 
 /* ── Sub-page intro (white header section on neurotech.html / nuclear.html) ─ */
 #page-intro {
@@ -812,6 +789,27 @@ h2 {
   font-size: 0.93rem;
   color: var(--muted, #4E6080);
   transition: color 0.15s;
+}
+
+/* ── Essay archive nav ─────────────────────────────────────────────────────── */
+.essay-archive-nav {
+  background-color: #FFFFFF;
+  padding: 2rem 0 3rem;
+  border-top: 1px solid rgba(0,0,0,0.07);
+}
+
+.essay-archive-nav a {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted, #4A4A4A);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.essay-archive-nav a:hover {
+  color: #0A0A0A;
 }
 
 /* ── Essay body (white, prose-optimised) ───────────────────────────────────── */
