@@ -41,6 +41,31 @@ Sources for every factual claim on the site. Where a claim originates in convers
 
 ---
 
+## Activity-Dependent Neuromodulation (neurotech.html)
+
+| Claim | Source |
+|---|---|
+| Badge: "Nature Medicine · February 2022" | [Rowald et al., Nature Medicine, 2022](https://www.nature.com/articles/s41591-021-01663-5) |
+| "Three participants with complete sensorimotor paralysis recovered diverse motor function within a single day" | [Rowald et al., Nature Medicine, 2022](https://www.nature.com/articles/s41591-021-01663-5) |
+| "Stand, walk, cycle, swim, and trunk control" | [Rowald et al., Nature Medicine, 2022](https://www.nature.com/articles/s41591-021-01663-5) |
+| Computational framework guided electrode placement and stimulation mapping | [Rowald et al., Nature Medicine, 2022](https://www.nature.com/articles/s41591-021-01663-5) |
+| Description of dorsal root targeting approach | [Rowald et al., Nature Medicine, 2022](https://www.nature.com/articles/s41591-021-01663-5) |
+
+---
+
+## Parkinson's Neuroprosthesis (neurotech.html)
+
+| Claim | Source |
+|---|---|
+| Badge: "Nature Medicine · November 2023" | [Milekovic et al., Nature Medicine, 2023](https://www.nature.com/articles/s41591-023-02584-1) |
+| "62-year-old patient with 30 years of advanced Parkinson's disease" | [Milekovic et al., Nature Medicine, 2023](https://www.nature.com/articles/s41591-023-02584-1) |
+| "Improving stride length and symmetry, restoring balance, reducing freezing of gait" | [Milekovic et al., Nature Medicine, 2023](https://www.nature.com/articles/s41591-023-02584-1) |
+| "First validated in a non-human primate model" | [Milekovic et al., Nature Medicine, 2023](https://www.nature.com/articles/s41591-023-02584-1) |
+| Working alongside deep brain stimulation and medication | [Milekovic et al., Nature Medicine, 2023](https://www.nature.com/articles/s41591-023-02584-1) |
+| Description of lumbosacral dorsal root targeting approach | [Milekovic et al., Nature Medicine, 2023](https://www.nature.com/articles/s41591-023-02584-1) |
+
+---
+
 ## Pull quote (neurotech.html)
 
 | Claim | Source |
