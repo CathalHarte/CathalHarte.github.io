@@ -50,7 +50,7 @@ const CV = {
       badge:    'Physics World Breakthrough of the Year 2023',
       name:     'Brain-Spine Interface',
       subtitle: 'Restoring natural walking after chronic spinal cord injury',
-      desc:     'A cortical implant decodes movement intent wirelessly, in real time, driving a spinal stimulator that reawakens circuits below the injury. I built the clinical system that made it work — and made it work in patients\' homes.',
+      desc:     'A cortical implant decodes movement intent wirelessly, in real time, driving a spinal stimulator that reawakens circuits below the injury. I built the clinical system that made it work — and brought it home.',
       watchUrl: 'https://www.youtube.com/watch?v=AARVY-3oDRQ',
       thumbUrl: 'https://img.youtube.com/vi/AARVY-3oDRQ/maxresdefault.jpg',
       more:     { label: 'More neurotech →', url: 'neurotech.html' },
@@ -69,7 +69,7 @@ const CV = {
   },
 
   interests: {
-    body: 'Deliberately staying away from the mainstream — no algorithmic feeds, no social media recommendations. I read {s:Noema}, {b:Aeon}, and {y:Equator} via newsletters.',
+    body: 'Deliberately staying away from the mainstream — no algorithmic feeds, no social media recommendations. I read {s:Noema}, {b:Aeon}, and {y:Nature} via newsletters.',
     cta:  'Drop me an email to talk about the revolution.',
     more: { label: 'More thoughts →', url: 'essay-raised-by-wolves.html' },
   },
@@ -140,7 +140,7 @@ function renderHero(d) {
 
 function renderAbout(d) {
   const paras = d.about.map(p => `<p>${markup(p)}</p>`).join('');
-  return sectionWrap('about', 'About', 'What I build', `
+  return sectionWrap('about', 'Bio', 'About me', `
     <div class="reveal about-body">${paras}</div>
   `);
 }
