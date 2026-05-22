@@ -1,56 +1,45 @@
-// ── Theme definitions — light (hero) → dark (contact) ────────────────────────
+// ── Theme definitions — nav adapts as sections enter the viewport ─────────────
 const THEMES = {
-  hero: {
-    bg: '#F9F7F0', fg: '#111111', surface: '#EDE9DF',
-    border: '#DDD8CA', muted: '#666666',
-    navBg: 'rgba(249,247,240,0.88)',
-  },
-  about: {
-    bg: '#F2EBD8', fg: '#111111', surface: '#E5DCCA',
-    border: '#D5CCB8', muted: '#5A5A5A',
-    navBg: 'rgba(242,235,216,0.88)',
-  },
-  experience: {
-    bg: '#312E44', fg: '#E8E3DA', surface: '#3D3956',
-    border: '#4A4660', muted: '#A89FC0',
-    navBg: 'rgba(49,46,68,0.92)',
-  },
-  skills: {
-    bg: '#191724', fg: '#E8E3DA', surface: '#22203A',
-    border: '#2E2B48', muted: '#9490B0',
-    navBg: 'rgba(25,23,36,0.92)',
-  },
-  education: {
-    bg: '#0F0E18', fg: '#EAEAF5', surface: '#18162A',
-    border: '#22203A', muted: '#8888AA',
-    navBg: 'rgba(15,14,24,0.94)',
-  },
-  contact: {
-    bg: '#09090F', fg: '#F0F0F8', surface: '#111020',
-    border: '#1C1A2C', muted: '#8080A0',
-    navBg: 'rgba(9,9,15,0.94)',
-  },
+  hero:       { navBg: 'rgba(255,255,255,0.92)', fg: '#0A0A0A', muted: '#4A4A4A' },
+  about:      { navBg: 'rgba(255,255,255,0.92)', fg: '#0A0A0A', muted: '#4A4A4A' },
+  'page-intro': { navBg: 'rgba(255,255,255,0.92)', fg: '#0A0A0A', muted: '#4A4A4A' },
+  project:    { navBg: 'rgba(0,13,28,0.97)',     fg: '#C8D0E0', muted: '#4E6080' },
+  bsi:        { navBg: 'rgba(0,13,28,0.97)',     fg: '#C8D0E0', muted: '#4E6080' },
+  stimo:      { navBg: 'rgba(0,13,28,0.97)',     fg: '#C8D0E0', muted: '#4E6080' },
+  parkinsons:   { navBg: 'rgba(0,13,28,0.97)',     fg: '#C8D0E0', muted: '#4E6080' },
+  robotics:     { navBg: 'rgba(0,13,28,0.97)',     fg: '#C8D0E0', muted: '#4E6080' },
+  hemodynamics: { navBg: 'rgba(0,13,28,0.97)',     fg: '#C8D0E0', muted: '#4E6080' },
+  pullquote:  { navBg: 'rgba(0,13,28,0.97)',     fg: '#C8D0E0', muted: '#4E6080' },
+  press:      { navBg: 'rgba(0,13,28,0.97)',     fg: '#C8D0E0', muted: '#4E6080' },
+  terapet:    { navBg: 'rgba(0,13,28,0.97)',     fg: '#C8D0E0', muted: '#4E6080' },
+  latest:     { navBg: 'rgba(0,13,28,0.97)',     fg: '#C8D0E0', muted: '#4E6080' },
+  archive:    { navBg: 'rgba(0,13,28,0.97)',     fg: '#C8D0E0', muted: '#4E6080' },
+  'essay-body':   { navBg: 'rgba(255,255,255,0.92)', fg: '#0A0A0A', muted: '#4A4A4A' },
+  'essay-body-2': { navBg: 'rgba(255,255,255,0.92)', fg: '#0A0A0A', muted: '#4A4A4A' },
+  'essay-body-3': { navBg: 'rgba(255,255,255,0.92)', fg: '#0A0A0A', muted: '#4A4A4A' },
+  'essay-int-1':  { navBg: 'rgba(4,6,8,0.98)',        fg: '#C0C8D8', muted: '#465568' },
+  'essay-int-2':  { navBg: 'rgba(4,6,8,0.98)',        fg: '#C0C8D8', muted: '#465568' },
+  'essay-int-3':  { navBg: 'rgba(4,6,8,0.98)',        fg: '#C0C8D8', muted: '#465568' },
+  comments:   { navBg: 'rgba(4,6,8,0.98)',       fg: '#C0C8D8', muted: '#465568' },
+  interests:  { navBg: 'rgba(4,6,8,0.98)',        fg: '#C0C8D8', muted: '#465568' },
+  contact:    { navBg: 'rgba(2,3,4,0.99)',       fg: '#B8C0D0', muted: '#404E60' },
 };
 
-// ── Apply a theme by updating CSS custom properties ───────────────────────────
 function applyTheme(id) {
   const t = THEMES[id];
   if (!t) return;
   const r = document.documentElement.style;
-  r.setProperty('--bg',      t.bg);
-  r.setProperty('--fg',      t.fg);
-  r.setProperty('--surface', t.surface);
-  r.setProperty('--border',  t.border);
-  r.setProperty('--muted',   t.muted);
-  r.setProperty('--nav-bg',  t.navBg);
+  r.setProperty('--nav-bg', t.navBg);
+  r.setProperty('--fg',     t.fg);
+  r.setProperty('--muted',  t.muted);
 }
 
-// ── Theme transitions — trigger when section reaches centre of viewport ───────
+// ── Theme transitions — snap as section hits centre ───────────────────────────
 const themeObserver = new IntersectionObserver((entries) => {
   entries.forEach(e => { if (e.isIntersecting) applyTheme(e.target.id); });
 }, { rootMargin: '-42% 0px -42% 0px' });
 
-// ── Reveal / stagger — fade in elements as they scroll into view ──────────────
+// ── Reveal / stagger ──────────────────────────────────────────────────────────
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach(e => {
     if (e.isIntersecting) {
@@ -60,7 +49,7 @@ const revealObserver = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.1 });
 
-// ── Active nav link — highlight the current section ───────────────────────────
+// ── Active nav link ───────────────────────────────────────────────────────────
 const navObserver = new IntersectionObserver((entries) => {
   entries.forEach(e => {
     const link = document.querySelector(`#nav-links a[href="#${e.target.id}"]`);
@@ -69,22 +58,22 @@ const navObserver = new IntersectionObserver((entries) => {
 }, { rootMargin: '-44% 0px -44% 0px' });
 
 // ── Scroll handler — progress bar + hero parallax ────────────────────────────
-const progressBar  = document.getElementById('progress');
-const heroInner    = document.querySelector('.hero-inner');
-const viewH        = window.innerHeight;
+const progressBar = document.getElementById('progress');
+const viewH       = window.innerHeight;
 
 window.addEventListener('scroll', () => {
-  const scrolled = window.scrollY;
+  const scrolled  = window.scrollY;
   const maxScroll = document.body.scrollHeight - viewH;
 
   progressBar.style.width = (scrolled / maxScroll * 100) + '%';
 
+  const heroInner = document.querySelector('.hero-inner');
   if (heroInner && scrolled < viewH) {
-    heroInner.style.transform = `translateY(${scrolled * 0.22}px)`;
+    heroInner.style.transform = `translateY(${scrolled * 0.32}px)`;
   }
 }, { passive: true });
 
-// ── Init — observe all sections once the DOM is ready ────────────────────────
+// ── Init ──────────────────────────────────────────────────────────────────────
 document.querySelectorAll('section[id]').forEach(el => {
   themeObserver.observe(el);
   navObserver.observe(el);
