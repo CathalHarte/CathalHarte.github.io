@@ -2,7 +2,7 @@
 
 A personal website — not a CV, not a portfolio. More a curated account of the work I find worth talking about: neurotechnology, nuclear medicine, and the odd essay.
 
-Built as a pure static site (HTML, CSS, vanilla JS) with no framework and no build step. Hosted on Infomaniak.
+Built as a pure static site (HTML, CSS, vanilla JS) with no framework and no build step. Deployed via GitHub Pages.
 
 ---
 
