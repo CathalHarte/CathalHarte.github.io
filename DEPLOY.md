@@ -1,114 +1,79 @@
-# Deployment — Infomaniak
+# Deployment — GitHub Pages + Infomaniak domain
 
-This is a pure static site (7 files, no server-side logic). Any web host will work. The steps below are for Infomaniak's CHF 10/month Web Hosting plan.
+This is a pure static site. It deploys for free on GitHub Pages; the only cost is the domain name (~CHF 10–15/year from Infomaniak).
 
 ---
 
-## 1. Choose a domain name
+## 1. Create the GitHub repository
 
-Infomaniak sells domains separately from hosting. Some options:
+1. Go to [github.com/new](https://github.com/new)
+2. Name the repository exactly **`cathalharte.github.io`** (replacing `cathalharte` with your GitHub username)
+3. Set it to **Public** — GitHub Pages requires public repos on the free plan
+4. Do not initialise with a README (you already have one)
+
+---
+
+## 2. Push the site
+
+In the project directory:
+
+```bash
+git remote add origin https://github.com/cathalharte/cathalharte.github.io.git
+git push -u origin master
+```
+
+---
+
+## 3. Enable GitHub Pages
+
+1. Go to the repository on GitHub → **Settings** → **Pages**
+2. Under **Branch**, select `master` and `/ (root)`, click Save
+3. GitHub builds and deploys in ~30 seconds
+4. Site is live at `https://cathalharte.github.io`
+
+---
+
+## 4. Buy a domain (optional, ~CHF 10–15/year)
+
+Good options:
 
 | Domain | Notes |
 |---|---|
-| `cathalharte.com` | Clean, internationally readable |
-| `cathalharte.ie` | Irish ccTLD — registrar varies, may need to use a separate Irish registrar |
-| `cathal.dev` | `.dev` is Google-run, HTTPS-enforced, developer connotation |
-| `cathalharte.eu` | Available via Infomaniak, EU-anchored |
+| `cathalharte.ch` | Swiss ccTLD, clean |
+| `cathalharte.com` | Internationally readable |
+| `cathal.dev` | `.dev` forces HTTPS, developer connotation |
 
-Recommendation: **`cathalharte.com`** — unambiguous, easy to spell aloud, no country assumption. Check availability at infomaniak.com/en/domains.
-
----
-
-## 2. Purchase hosting
-
-Go to [infomaniak.com](https://www.infomaniak.com) → Web Hosting → **Web & Mail** or **Site** plan at CHF 10/month.
-
-The cheapest plan is more than sufficient. This site is ~7 HTML/JS/CSS files totalling well under 1 MB. You will never approach storage or bandwidth limits.
-
-What you get that matters:
-- SFTP/FTP access to upload files
-- Automatic SSL certificate (Let's Encrypt) — HTTPS at no extra cost
-- Custom domain pointing
-- Webmail (if you want a `@cathalharte.com` email address)
+Buy at [infomaniak.com/en/domains](https://www.infomaniak.com/en/domains).
 
 ---
 
-## 3. Point your domain to Infomaniak
+## 5. Point the domain at GitHub Pages
 
-If you registered the domain with Infomaniak: it links automatically during checkout.
+In **Infomaniak DNS** (Domains → your domain → DNS zone), add:
 
-If you registered elsewhere (e.g. a `.ie` domain at IE Domain Registry):
-1. Log into your registrar
-2. Find DNS / Nameserver settings
-3. Replace existing nameservers with Infomaniak's:
-   ```
-   ns1.infomaniak.com
-   ns2.infomaniak.com
-   ```
-4. Allow up to 24h for propagation (usually under 2h)
-
----
-
-## 4. Upload the site files
-
-In your Infomaniak control panel (Manager):
-
-1. Go to **Web hosting** → your site → **File manager**, or connect via SFTP:
-   - Host: `ftp.infomaniak.com` (check Manager for your exact hostname)
-   - Username / password: your Infomaniak credentials or the FTP sub-user they create
-   - Port: 22 (SFTP) or 21 (FTP)
-
-2. Navigate to the `web/` or `public_html/` directory (Infomaniak uses `web/`)
-
-3. Upload these files — nothing else:
-   ```
-   index.html
-   content.js
-   style.css
-   scroll.js
-   neurotech.html
-   nuclear.html
-   thoughts.html
-   ```
-
-4. Do **not** upload: `.claude/`, `README.md`, `STYLE.md`, `SOURCES.md`, `DEPLOY.md`, `.git/`
-
----
-
-## 5. Enable HTTPS
-
-In the Infomaniak Manager:
-1. Go to your hosting → **SSL certificates**
-2. If not already active, click **Install a free Let's Encrypt certificate**
-3. It provisions in minutes and auto-renews
-
-Once live, test at `https://cathalharte.com` and `https://www.cathalharte.com`.
-
----
-
-## 6. Optional: redirect www → non-www
-
-Create a file named `.htaccess` in the `web/` root:
-
-```apache
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
-RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
+```
+A     @    185.199.108.153
+A     @    185.199.109.153
+A     @    185.199.110.153
+A     @    185.199.111.153
+CNAME www  cathalharte.github.io.
 ```
 
-This ensures `www.cathalharte.com` redirects cleanly to `cathalharte.com`.
+Then in the GitHub repository → **Settings** → **Pages** → **Custom domain**, enter `cathalharte.ch` and save. GitHub provisions an HTTPS certificate automatically (takes a few minutes).
+
+Allow up to 24h for DNS to propagate globally (usually under 2h).
 
 ---
 
-## 7. Deploy updates
+## 6. Deploy updates
 
-No pipeline needed. When content changes:
+```bash
+git add <changed files>
+git commit -m "describe change"
+git push
+```
 
-1. Edit `content.js` (or any file)
-2. Upload the changed file via SFTP or the File Manager, overwriting the old version
-3. Hard-refresh the browser (`Ctrl+Shift+R`) to bust local cache
-
-For a more polished workflow later: Infomaniak supports Git-based deployment on higher-tier plans, and the site could also be moved to a CDN-backed static host (Cloudflare Pages, etc.) at zero cost if desired.
+GitHub Pages redeploys automatically on every push to `master`. Live within ~30 seconds.
 
 ---
 
@@ -116,7 +81,7 @@ For a more polished workflow later: Infomaniak supports Git-based deployment on 
 
 | Item | Cost |
 |---|---|
-| Web Hosting plan | CHF 10/month (billed annually ≈ CHF 120/year) |
-| Domain `.com` | ~CHF 10–15/year |
-| SSL certificate | Free (Let's Encrypt, included) |
-| **Total** | **~CHF 130–135/year** |
+| GitHub Pages hosting | Free |
+| Domain (e.g. `cathalharte.ch`) | ~CHF 10–15/year |
+| SSL certificate | Free (GitHub handles it) |
+| **Total** | **~CHF 10–15/year** |
