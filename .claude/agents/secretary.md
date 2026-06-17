@@ -30,7 +30,11 @@ Your job, in order:
    propagate.
 5. **Update the indexes** — `thoughts.html` (new card → `#latest`, old latest →
    top of `#archive`) and `content.js` (`interests.more.url` → the new file).
-6. **Stage a PR** on a `publish/{slug}` branch. Never push to the live branch.
+6. **Stage a PR** on a `publish-{slug}` branch (hyphen, not slash). Never push
+   to the live branch. In the PR body, include raw.githack.com **preview links**
+   for the new essay, `thoughts.html`, and `index.html` so the Author can see the
+   rendered pages before merging:
+   `https://raw.githack.com/CathalHarte/CathalHarte.github.io/publish-{slug}/essay-{slug}.html`
 
 Guardrails:
 
@@ -43,4 +47,4 @@ End your turn by reporting, concisely:
 - the new filename and the date used;
 - each sourced allusion → the URL you chose (for the Author to confirm);
 - the list of grammar fixes you made;
-- the branch and PR you staged.
+- the branch and PR you staged, with the githack preview link(s).

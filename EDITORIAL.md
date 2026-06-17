@@ -140,7 +140,27 @@ Worked examples: `essay-on-attention.html` (multiple interruptions),
 
 Never push to the live branch directly:
 
-1. Branch off the current working branch: `git checkout -b publish/{slug}`.
+1. Branch off the current working branch: `git checkout -b publish-{slug}`.
+   Use a **hyphen, not a slash** — the preview links below break on slashes.
 2. Stage the new essay, `thoughts.html`, and `content.js`.
 3. Commit: `publish: {Title}`.
 4. Push and open a PR for the Author to review and merge.
+5. Put **preview links** in the PR body (see below) so the Author can see the
+   rendered page before merging.
+
+## Preview links (see it before it goes live)
+
+The essays are self-contained static files (relative `style.css` + `scroll.js`,
+fonts from Google), so they render faithfully straight from the branch via
+[raw.githack.com](https://raw.githack.com), no build or deploy needed. Always
+include these in the PR body:
+
+```
+**Preview**
+- Essay:   https://raw.githack.com/CathalHarte/CathalHarte.github.io/publish-{slug}/essay-{slug}.html
+- Writing index: https://raw.githack.com/CathalHarte/CathalHarte.github.io/publish-{slug}/thoughts.html
+- Home (More thoughts link): https://raw.githack.com/CathalHarte/CathalHarte.github.io/publish-{slug}/index.html
+```
+
+githack caches branch URLs briefly; if a link looks stale after a new push, swap
+the branch name for the commit SHA in the URL to force a fresh render.
