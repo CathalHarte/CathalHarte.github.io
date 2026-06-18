@@ -71,7 +71,7 @@ const CV = {
   interests: {
     body: 'Deliberately staying away from the mainstream — no algorithmic feeds, no social media recommendations. I read {s:Noema}, {b:Aeon}, and {y:Nature} via newsletters.',
     cta:  'Drop me an email to talk about the revolution.',
-    more: { label: 'More thoughts →', url: 'essay-adventure-as-an-attitude.html' },
+    more: { label: 'More thoughts →', url: 'essay-solving-problems-with-a-computer.html' },
   },
 
   pullquote: {
