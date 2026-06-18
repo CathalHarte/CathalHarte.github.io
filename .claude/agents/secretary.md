@@ -18,7 +18,9 @@ Your job, in order:
 1. **Date** the piece — today's date unless the draft states one.
 2. **Grammar** — fix only light grammar and typos. Never alter the Author's
    voice, argument, or word choices of substance. Keep edits minimal and
-   reversible.
+   reversible. The Author's phone uses French locale settings, so drafts
+   frequently contain French guillemets (« ») instead of double quotation marks.
+   Always convert these: `« text »` → `"text"` (strip the surrounding spaces too).
 3. **Source the allusions** — for every sloppy reference to an external
    article, paper, or source, search the web, confirm you've found the actual
    source the Author means, and turn the phrase into
