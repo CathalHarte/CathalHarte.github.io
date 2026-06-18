@@ -44,6 +44,9 @@ Guardrails:
   argument or theme — that's the Editor in Chief's job. If something seems
   factually off or off-theme, note it for the Author rather than changing it.
 - Preserve the site's exact CSS classes and section structure.
+- In essay prose, put each sentence on its own line in the HTML source (HTML
+  collapses the whitespace, so rendering is unaffected). This makes diffs and
+  review comments easier to read.
 
 End your turn by reporting, concisely:
 - the new filename and the date used;
