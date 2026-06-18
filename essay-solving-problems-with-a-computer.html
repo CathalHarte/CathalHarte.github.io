@@ -25,7 +25,7 @@
     <!-- White intro -->
     <section id="page-intro">
       <div class="section-inner">
-        <span class="section-label">18 June 2026</span>
+        <span class="section-label">15 June 2026</span>
         <h1 class="page-title">Solving Problems With a Computer</h1>
       </div>
     </section>
@@ -49,7 +49,7 @@
               </tr>
               <tr>
                 <th>AI Agent</th>
-                <td>A semi-autonomous, Large Language Model based application that can use other tools in a loop to complete a task. Definition from a Leon Furze <a href="https://leonfurze.com/2026/03/30/a-taxonomy-of-agentic-ai/" target="_blank" rel="noopener">article</a>.</td>
+                <td>A semi-autonomous, Large Language Model based application that can use other tools in a loop to complete a task. Definition from a Leon Furze <a href="https://leonfurze.com/2026/02/14/building-websites-with-claude-code/" target="_blank" rel="noopener">article</a>.</td>
               </tr>
             </tbody>
           </table>
@@ -107,9 +107,9 @@
           How well do they do this?
           Is doing this well a predictor for success at different points in the chain of "Solving Problems with a Computer"?</p>
 
-          <p>As this article so succinctly puts it, it depends greatly on quality of the soil in which LLMs are planted.</p>
+          <p>As <a href="https://www.noemamag.com/we-may-be-entering-a-second-axial-age/" target="_blank" rel="noopener">this</a> article so succinctly puts it, it depends greatly on quality of the soil in which LLMs are planted.</p>
 
-          <p>The chain remains the same: we won't be investigating proposed frameworks where "the LLM can solve problems in its own language, high level languages only exist so that humans can read them", or usage where steps in the chain are naïvely ignored: see "<a href="https://science.slashdot.org/story/26/04/03/2334204/cognitive-surrender-leads-ai-users-to-abandon-logical-thinking-research-finds" target="_blank" rel="noopener">Cognitive Surrender</a>".</p>
+          <p>The chain remains the same: we won't be investigating proposed frameworks where "the LLM can solve problems in its own language, high level languages only exist so that humans can read them", or usage where steps in the chain are naïvely ignored: see "<a href="https://arstechnica.com/ai/2026/04/research-finds-ai-users-scarily-willing-to-surrender-their-cognition-to-llms/" target="_blank" rel="noopener">Cognitive Surrender</a>".</p>
 
           <h3>Define an Objective</h3>
 
@@ -143,7 +143,7 @@
           <h3>Describe an Algorithm</h3>
 
           <p>This depends on whether the defined objective has a published solution.
-          Typically, LLMs favour <a href="https://arxiv.org/abs/2405.15739" target="_blank" rel="noopener">citing ideas from more highly cited papers</a>.
+          Typically, LLMs favour <a href="https://www.nature.com/articles/s41599-025-06193-w" target="_blank" rel="noopener">citing ideas from more highly cited papers</a>.
           This is potentially troublesome for science, as it reinforces the status quo, but in business "innovation as a last resort" is a sound principle.
           As above, most problems can be solved with clever combination of previously solved problems, rather than by re-inventing the wheel.</p>
 
@@ -154,7 +154,7 @@
           Effective communication of objectives and algorithms are necessary to maintain such projects.
           A language's popularity should be considered in relation to the defined objective, to maximize the quantity of high quality examples the LLM can draw from.
           How does an LLM in training know that an example is high quality?
-          Conventionally, that's solved by putting a <a href="https://en.wikipedia.org/wiki/Human-in-the-loop" target="_blank" rel="noopener">human in the computational loop</a>.
+          Conventionally, that's solved by putting a <a href="https://en.wikipedia.org/wiki/Reinforcement_learning_from_human_feedback" target="_blank" rel="noopener">human in the computational loop</a>.
           As above, the status quo is reinforced, just as in the past the development of frameworks and libraries served to reinforce the status quo.
           Python is popular amongst scientists because Python is popular amongst scientists.</p>
 
@@ -169,14 +169,14 @@
           The simplest guiding principle, which <em>is</em> reinforced by LLM learning, is to try to describe problems idiomatically with regards to the language you are using.
           This is what gives the compiler the best chance of writing efficient code.
           Typically the answer lies in applying <em>more</em> layers of abstraction, not less, to access the most efficient methods.
-          This is why I think "the LLM can solve problems in its own language" is a bad idea — doing so throws away the pedantic work of the control freaks and the nerds in favour of reinventing the wheel, rather than building atop that solid foundation.</p>
+          This is why I think "the LLM can solve problems in its own language" is a bad idea - doing so throws away the pedantic work of the control freaks and the nerds in favour of reinventing the wheel, rather than building atop that solid foundation.</p>
 
           <h3>Computation</h3>
 
           <p>Whether human or LLM written, the code runs the same.
           If there are any steps that require final decision making in an expert domain, it remains wise that a human does this, and additionally the expert human will appreciate this, unless they are fully in the throes of cognitive surrender.
           Going back to the treatment planning example, it makes no sense to train a chatbot to make offhand remarks that a robustness value of 1mm is a good place to start, and launch that computation before asking, or that a micro-dosimetric kinetic model for estimating excess absolute risk when treating breast cancer should be used, instead of some other option.
-          Solving unsolved problems typically requires collaboration with domain experts who know more than you do, which is tricky, and there's no shortcut for it.
+          Solving unsolved problems typically requires collaboration with domain experts who know more than you do, which is <a href="https://dn710106.ca.archive.org/0/items/ebooks_202003/Eric%20Evans/Domain-driven%20Design%20%281503%29/Domain-Driven%20Design_%20Tackling%20Complexity%20in%20the%20Heart%20of%20Software.pdf" target="_blank" rel="noopener">tricky</a>, and there's no shortcut for it.
           To be of any use as a tool builder, you have to stand at the frontier of black art, of craft, of that which has not yet been formalized in writing.
           In other words, the soil in which an LLM can grow is not bountiful, and if it were, another enterprise would have already plundered it, you can count on the capitalistic model for that.</p>
 
@@ -191,13 +191,13 @@
           As before, it has plenty of high quality examples to work from in the form of successful open source projects.</p>
 
           <p>Additionally, we can use the most pedantic of tools, which also tend to be written and honed by control freaks and nerds, to enforce coding to standards which are basically not humanly possible.
-          LLMs don't get frustrated at the slog of adjustment after adjustment to satisfy every warning, every best practice, and every idiom, nor do they get overwhelmed when they see the results of a <a href="https://en.wikipedia.org/wiki/Mutation_testing" target="_blank" rel="noopener">mutation testing run</a>.</p>
+          LLMs don't get frustrated at the slog of adjustment after adjustment to satisfy every warning, every best practice, and every idiom, nor do they get overwhelmed when they see the results of a <a href="https://stryker-mutator.io/" target="_blank" rel="noopener">mutation testing run</a>.</p>
 
           <p>The conventional way to train and use LLMs is with reinforcement learning from human feedback (RLHF).
           This method is, in itself, tedious, and hence the state-of-the-art is already moving away from it toward generative adversarial network approaches.
           <a href="https://www.anthropic.com/research/constitutional-ai-harmlessness-from-ai-feedback" target="_blank" rel="noopener">Constitutional AI</a>, for example, is the automated reinforcement of moral directives, by facing an automated process against an automated process.
-          It's also the approach that led Anthropic to <a href="https://finitial.substack.com/p/the-ai-race-has-a-new-contender-and" target="_blank" rel="noopener">win the arms race</a>.
-          The application of automated processes to the functioning of a <a href="https://claude.com/solutions/agents" target="_blank" rel="noopener">Claude</a> agent is therefore a natural extension of that winning strategy.</p>
+          It's also the approach that led Anthropic to <a href="https://www.bbc.com/news/articles/c932g3v3e13o" target="_blank" rel="noopener">win the arms race</a>.
+          The application of automated processes to the functioning of a <a href="https://claude.ai/" target="_blank" rel="noopener">Claude</a> agent is therefore a natural extension of that winning strategy.</p>
 
           <p>With this in mind, all well structured processes and tools with the goal of improving human output, even those damned ISO standards that everyone complains about, become methods to enhance LLM output.</p>
 

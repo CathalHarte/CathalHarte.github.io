@@ -47,7 +47,7 @@ const revealObserver = new IntersectionObserver((entries) => {
       revealObserver.unobserve(e.target);
     }
   });
-}, { threshold: 0.1 });
+}, { threshold: 0 });
 
 // ── Active nav link ───────────────────────────────────────────────────────────
 const navObserver = new IntersectionObserver((entries) => {
