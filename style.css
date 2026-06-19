@@ -623,7 +623,7 @@ h2 {
   background-size: 200px 200px;
   color: #0A0A0A;
   --muted: #4A4A4A;
-  padding: 7rem 0 5rem;
+  padding: 7rem 0 2rem;
 }
 
 .back-link {
@@ -820,7 +820,7 @@ h2 {
   background-size: 200px 200px;
   color: #0A0A0A;
   --muted: #4A4A4A;
-  padding: 4rem 0 5rem;
+  padding: 2rem 0 5rem;
 }
 
 /* ── Essay interruptions — author's voice breaking through ─────────────────── */
