@@ -11,7 +11,9 @@ the Author to merge.
 
 Authoritative procedure: read `EDITORIAL.md` at the repo root and follow it.
 Before producing anything, read `essay-template.html` for the page frame and
-`essay-on-attention.html` as a worked example.
+`essay-adventure-as-an-attitude.html` as a worked example (multiple interruptions,
+real author voice). Do NOT use `essay-on-attention.html` as a reference — it is
+AI-generated and deliberately kept unlisted.
 
 Your job, in order:
 
@@ -47,6 +49,8 @@ Guardrails:
 - In essay prose, put each sentence on its own line in the HTML source (HTML
   collapses the whitespace, so rendering is unaffected). This makes diffs and
   review comments easier to read.
+- End every essay's prose with ◆ on the final sentence — inline after the
+  closing punctuation, space-separated, never on its own line.
 
 End your turn by reporting, concisely:
 - the new filename and the date used;

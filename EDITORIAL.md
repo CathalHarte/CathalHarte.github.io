@@ -105,8 +105,9 @@ design changes to the template propagate automatically. The frame:
 - `<main>`:
   - `#page-intro` → `.section-label` = date, `.page-title` = title.
   - Body in `<section id="essay-body" class="essay-section">` with
-    `.section-inner > .essay-prose.reveal` holding `<p>`, `<h2>`, and
+    `.section-inner > .essay-prose` holding `<p>`, `<h2>`, and
     `<blockquote><p>…</p><cite>…</cite></blockquote>`.
+    The final `<p>` ends with ` ◆` (space + black diamond, inline).
   - Each aside breaks the body: close the current body section, emit
     `<section id="essay-int-N" class="essay-interruption">`
     (→ `.interruption-inner.reveal` → `p.interruption-text` +
@@ -118,8 +119,10 @@ design changes to the template propagate automatically. The frame:
 
 Links: `<a href="URL" target="_blank" rel="noopener">text</a>`.
 
-Worked examples: `essay-on-attention.html` (multiple interruptions),
+Worked examples: `essay-adventure-as-an-attitude.html` (multiple interruptions),
 `essay-raised-by-wolves.html` (single section).
+Note: `essay-on-attention.html` exists on the site but is AI-generated,
+deliberately unlisted, and not a voice or structure reference.
 
 ---
 
