@@ -6,18 +6,18 @@ Items that shipped but need a rewrite in the Author's own words.
 
 ## Qualγscan card description (`nuclear.html` `#qualyscan`)
 
-Current text was AI-recovered from git history — not the Author's voice.
+Current text is AI-recovered from git history — not the Author's voice.
 
 > "Qualγscan monitors the beam in real time during particle therapy treatment —
 > catching deviations before they reach the patient. I build the software side,
 > from acquisition pipelines to the path toward regulatory clearance."
 
-**Action:** Author to rewrite the `project-desc` (and optionally the
-`project-subtitle`) for the Qualγscan card in `nuclear.html`.
+**Action:** Author to rewrite the `project-desc` and optionally the
+`project-subtitle` for the Qualγscan card in `nuclear.html`.
 
 ---
 
-## Adventure essay card excerpt (`thoughts.html` `#latest`)
+## Adventure essay card excerpt (`thoughts.html` `#latest` archive entry)
 
 Current excerpt was drafted by the Secretary:
 
