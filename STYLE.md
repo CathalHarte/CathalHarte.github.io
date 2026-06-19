@@ -73,7 +73,7 @@ Cards have `padding: 0` with an inner `.project-card-body` wrapper (`padding: 2.
 The nav background, foreground colour, and muted colour are stored in a `THEMES` object keyed by section ID. An `IntersectionObserver` with `rootMargin: '-42% 0px -42% 0px'` fires when a section crosses the vertical centre of the viewport, triggering an instant CSS custom property swap. Transitions between themes are sharp (0.1s) — not a gentle fade.
 
 ### Reveal / stagger
-Elements with `.reveal` animate in via `opacity 0 → 1` + `translateY(28px → 0)` as they enter the viewport. `.stagger` containers delay each child by 80ms increments.
+Elements with `.reveal` animate in via `opacity 0 → 1` + `translateY(28px → 0)` as they enter the viewport. `.stagger` containers delay each child by 80ms increments. Exception: essay prose (`div.essay-prose`) does not carry `.reveal` — it renders immediately.
 
 ### Parallax
 The hero inner block applies `translateY(scrollY * 0.32)` on scroll, creating a mild depth effect as you leave the hero. Capped to `scrollY < viewportHeight` so it doesn't affect lower sections.

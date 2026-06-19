@@ -113,7 +113,7 @@ Sources for every factual claim on the site. Where a claim originates in convers
 
 | Claim | Source |
 |---|---|
-| Reads Noema, Aeon, and Equator via newsletters | Cathal Harte (direct) |
+| Reads Noema, Aeon, and Nature via newsletters | Cathal Harte (direct) |
 | "Deliberately staying away from the mainstream — no algorithmic feeds, no social media" | Cathal Harte (direct) |
 | "Drop me an email to talk about the revolution." | Cathal Harte (direct) |
 

@@ -62,14 +62,12 @@ const CV = {
     name:     'Nuclγscan',
     subtitle: 'Total-body PET imaging · CERN spin-off technology',
     desc:     'A next-generation total-body PET scanner designed for precision medicine and whole-body imaging at a level not previously possible. I build the software across the full stack: acquisition, reconstruction, and clinical integration, in addition to leading the risk management activities across the whole design. The same underlying technology is also being applied for real-time proton therapy QA.',
-    links: [
-      { label: 'PTCOG 2026', url: 'https://terapet.ch/ptcog-2026/', note: 'Qualγscan', upcoming: true },
-    ],
+    links: [],
     more: { label: 'More nuclear medicine →', url: 'nuclear.html' },
   },
 
   interests: {
-    body: 'Deliberately staying away from the mainstream — no algorithmic feeds, no social media recommendations. I read {s:Noema}, {b:Aeon}, and {y:Nature} via newsletters.',
+    body: 'Deliberately staying away from the mainstream — no algorithmic feeds, no social media recommendations. I read Noema, Aeon, and Nature via newsletters.',
     cta:  'Drop me an email to talk about the revolution.',
     more: { label: 'More thoughts →', url: 'essay-adventure-as-an-attitude.html' },
   },
@@ -142,19 +140,6 @@ function renderAbout(d) {
   const paras = d.about.map(p => `<p>${markup(p)}</p>`).join('');
   return sectionWrap('about', 'Bio', 'About me', `
     <div class="reveal about-body">${paras}</div>
-  `);
-}
-
-function renderExperience(d) {
-  const entries = d.experience.map(e => `
-    <div class="entry">
-      <span class="entry-org">${e.org}</span>
-      <span class="entry-date">${e.date}</span>
-      <span class="entry-role">${e.role}</span>
-      <p class="entry-desc">${markup(e.desc)}</p>
-    </div>`).join('');
-  return sectionWrap('experience', 'Experience', "Where I've worked", `
-    <div class="stagger">${entries}</div>
   `);
 }
 

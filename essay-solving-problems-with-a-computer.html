@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solving Problems With a Computer — Cathal Harte</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,700;0,8..60,800;1,8..60,700&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="progress"></div>
+  <nav id="nav">
+    <a href="index.html" class="logo" id="nav-logo">CH</a>
+    <ul id="nav-links">
+      <li><a href="thoughts.html">All writing →</a></li>
+      <li><a href="#comments">Comments</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <!-- White intro -->
+    <section id="page-intro">
+      <div class="section-inner">
+        <span class="section-label">15 June 2026</span>
+        <h1 class="page-title">Solving Problems With a Computer</h1>
+      </div>
+    </section>
+
+    <!-- Essay body -->
+    <section id="essay-body" class="essay-section">
+      <div class="section-inner">
+        <div class="essay-prose">
+
+          <table>
+            <thead>
+              <tr>
+                <th>Term</th>
+                <th>Definition</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Computer Science</th>
+                <td>The discipline of creating abstractions, i.e. capturing and compressing ideas, in order to solve complex problems efficiently with a computer.</td>
+              </tr>
+              <tr>
+                <th>AI Agent</th>
+                <td>A semi-autonomous, Large Language Model based application that can use other tools in a loop to complete a task. Definition from a Leon Furze <a href="https://leonfurze.com/2026/02/14/building-websites-with-claude-code/" target="_blank" rel="noopener">article</a>.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p>Define an objective → describe an algorithm → write the algorithm in a high level programming language → convert the algorithm to machine code → computation → achieve the objective.</p>
+
+          <p>The chain is only as strong as its weakest link.</p>
+
+          <p>In this article we will consider the process with regards to <em>unsolved</em> problems, rather than reinventions.</p>
+
+          <h2>The Conventional Way</h2>
+
+          <h3>Define an Objective</h3>
+
+          <p>The agile manifesto declares that "objectives are unclear", and applies an algorithm: achieve small identifiable objectives, show each achieved objective to the "customer", and the customer will tell you when they're satisfied that the problem they wanted to have solved (but were unable to communicate) has been solved.</p>
+
+          <h3>Describe an Algorithm</h3>
+
+          <p>Typically using unified modelling language (UML) or mathematically.
+          Plenty of programmers skip this step, and rely on an "intuitive understanding" of each other's work. (no comment)</p>
+
+          <p>It is here that it becomes clear that solving an unsolved problem is mostly about combining smaller solved problems together in new ways.</p>
+
+          <h3>High Level Programming</h3>
+
+          <p>Choosing to program at a high level of abstraction is a trade off between implementation speed and control.
+          High level programming languages are incredibly community-driven.
+          In case it was missed above, this provides a second chance to identify smaller solved problems which can be combined in a new solution.</p>
+
+          <h3>Machine Code</h3>
+
+          <p>The control freaks and nerds intervene here.</p>
+
+          <h3>Computation</h3>
+
+          <p>If you look closely enough, you'll almost always find a human in the loop here.
+          The trick is that it should be your customer, not you.
+          Example: <strong>treatment planning software for particle therapy</strong>.
+          Systems have evolved to allow different optimizations for different targets, with different metrics of success, using different physics and biological models.
+          The software does not and cannot say "treat this patient as follows", it merely shows all the different ways which the patient could be treated, with all the apparent pros and cons according to the selected models, so human judgement appears every step along the way.
+          And what is better in the case of highly trained professionals is that they typically don't even want their judgement taken from them.</p>
+
+          <h3>Achieve the Objective</h3>
+
+          <p>Has the objective been achieved?
+          If you're following agile, you may never be able to say this definitively.
+          You just try to keep your customer happy, an active process performed with the sales team.
+          Software often bypasses the sales team by spying on the customer because connection to feedback is the number one predictor for success.
+          Before showing your solution to the customer, <em>if</em> you have well defined algorithms, it is possible to run tests, which are normally programmed and automated, because, again, connection to feedback is the number one predictor for success.
+          Additionally, this step enables gaining back control that has been relinquished to high level languages and frameworks, and avoid embarrassment in front of the customer.</p>
+
+          <h2>Solving Problems Using LLMs</h2>
+
+          <p>Large language models model language from large numbers of examples.
+          How well do they do this?
+          Is doing this well a predictor for success at different points in the chain of "Solving Problems with a Computer"?</p>
+
+          <p>As <a href="https://www.noemamag.com/we-may-be-entering-a-second-axial-age/" target="_blank" rel="noopener">this</a> article so succinctly puts it, it depends greatly on quality of the soil in which LLMs are planted.</p>
+
+          <p>The chain remains the same: we won't be investigating proposed frameworks where "the LLM can solve problems in its own language, high level languages only exist so that humans can read them", or usage where steps in the chain are naïvely ignored: see "<a href="https://arstechnica.com/ai/2026/04/research-finds-ai-users-scarily-willing-to-surrender-their-cognition-to-llms/" target="_blank" rel="noopener">Cognitive Surrender</a>".</p>
+
+          <h3>Define an Objective</h3>
+
+          <p>I've heard reports that entrepreneurs are using LLMs to generate business ideas, and subsequently getting funding from Y Combinator.
+          This seems plausible: Y Combinator publishes "startup ideas", and the list of Y Combinator funded startups is easy to find.
+          Shaping a pitch that "looks like other successful pitches" is simply an effective communication of the ideas they would like to hear, written in the language used by previous successful businesses.</p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Scenario</th>
+                <th>Effectiveness</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Create an attractive business pitch</th>
+                <td>Plausible: Expect that language correlations are clear and available online.</td>
+              </tr>
+              <tr>
+                <th>Create a business with longevity</th>
+                <td>Unlikely: Businesses competing in a domain form a 2nd order chaos system, any attempt to characterize or predict them modifies the behaviour of the system. In other words, by the time a business book has been published, it is already out of date.</td>
+              </tr>
+              <tr>
+                <th>Identify a "worthwhile" objective</th>
+                <td>Plausible: Correlations can be found in the political sphere.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Describe an Algorithm</h3>
+
+          <p>This depends on whether the defined objective has a published solution.
+          Typically, LLMs favour <a href="https://www.nature.com/articles/s41599-025-06193-w" target="_blank" rel="noopener">citing ideas from more highly cited papers</a>.
+          This is potentially troublesome for science, as it reinforces the status quo, but in business "innovation as a last resort" is a sound principle.
+          As above, most problems can be solved with clever combination of previously solved problems, rather than by re-inventing the wheel.</p>
+
+          <h3>High Level Programming</h3>
+
+          <p>The world runs on open source software.
+          Open source projects that have many contributors are commonplace.
+          Effective communication of objectives and algorithms are necessary to maintain such projects.
+          A language's popularity should be considered in relation to the defined objective, to maximize the quantity of high quality examples the LLM can draw from.
+          How does an LLM in training know that an example is high quality?
+          Conventionally, that's solved by putting a <a href="https://en.wikipedia.org/wiki/Reinforcement_learning_from_human_feedback" target="_blank" rel="noopener">human in the computational loop</a>.
+          As above, the status quo is reinforced, just as in the past the development of frameworks and libraries served to reinforce the status quo.
+          Python is popular amongst scientists because Python is popular amongst scientists.</p>
+
+          <h3>Machine Code</h3>
+
+          <blockquote>
+            <p>Premature optimization is the root of all evil (or at least most of it) in programming.</p>
+            <cite>Donald Knuth</cite>
+          </blockquote>
+
+          <p>It is only wise to touch machine code once we are sure that the compiler optimization is not working to make high level code efficient.
+          The simplest guiding principle, which <em>is</em> reinforced by LLM learning, is to try to describe problems idiomatically with regards to the language you are using.
+          This is what gives the compiler the best chance of writing efficient code.
+          Typically the answer lies in applying <em>more</em> layers of abstraction, not less, to access the most efficient methods.
+          This is why I think "the LLM can solve problems in its own language" is a bad idea - doing so throws away the pedantic work of the control freaks and the nerds in favour of reinventing the wheel, rather than building atop that solid foundation.</p>
+
+          <h3>Computation</h3>
+
+          <p>Whether human or LLM written, the code runs the same.
+          If there are any steps that require final decision making in an expert domain, it remains wise that a human does this, and additionally the expert human will appreciate this, unless they are fully in the throes of cognitive surrender.
+          Going back to the treatment planning example, it makes no sense to train a chatbot to make offhand remarks that a robustness value of 1mm is a good place to start, and launch that computation before asking, or that a micro-dosimetric kinetic model for estimating excess absolute risk when treating breast cancer should be used, instead of some other option.
+          Solving unsolved problems typically requires collaboration with domain experts who know more than you do, which is <a href="https://dn710106.ca.archive.org/0/items/ebooks_202003/Eric%20Evans/Domain-driven%20Design%20%281503%29/Domain-Driven%20Design_%20Tackling%20Complexity%20in%20the%20Heart%20of%20Software.pdf" target="_blank" rel="noopener">tricky</a>, and there's no shortcut for it.
+          To be of any use as a tool builder, you have to stand at the frontier of black art, of craft, of that which has not yet been formalized in writing.
+          In other words, the soil in which an LLM can grow is not bountiful, and if it were, another enterprise would have already plundered it, you can count on the capitalistic model for that.</p>
+
+          <h3>Achieve the Objective</h3>
+
+          <p>If showing the achieved objective to the customer is useful, it's better to get there fast.
+          Matching the state-of-the-art is a prerequisite to be able to have a productive conversation, so that frontier knowledge can be collected to develop an edge over the competition.</p>
+
+          <p>For testing of algorithms, either human driven or LLM suggested, comprehensive automated testing remains an ideal to strive for.
+          Implementing such tests is very prescriptive and can be tedious.
+          Using an LLM to write tests is therefore very attractive.
+          As before, it has plenty of high quality examples to work from in the form of successful open source projects.</p>
+
+          <p>Additionally, we can use the most pedantic of tools, which also tend to be written and honed by control freaks and nerds, to enforce coding to standards which are basically not humanly possible.
+          LLMs don't get frustrated at the slog of adjustment after adjustment to satisfy every warning, every best practice, and every idiom, nor do they get overwhelmed when they see the results of a <a href="https://stryker-mutator.io/" target="_blank" rel="noopener">mutation testing run</a>.</p>
+
+          <p>The conventional way to train and use LLMs is with reinforcement learning from human feedback (RLHF).
+          This method is, in itself, tedious, and hence the state-of-the-art is already moving away from it toward generative adversarial network approaches.
+          <a href="https://www.anthropic.com/research/constitutional-ai-harmlessness-from-ai-feedback" target="_blank" rel="noopener">Constitutional AI</a>, for example, is the automated reinforcement of moral directives, by facing an automated process against an automated process.
+          It's also the approach that led Anthropic to <a href="https://www.bbc.com/news/articles/c932g3v3e13o" target="_blank" rel="noopener">win the arms race</a>.
+          The application of automated processes to the functioning of a <a href="https://claude.ai/" target="_blank" rel="noopener">Claude</a> agent is therefore a natural extension of that winning strategy.</p>
+
+          <p>With this in mind, all well structured processes and tools with the goal of improving human output, even those damned ISO standards that everyone complains about, become methods to enhance LLM output. ◆</p>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Archive nav -->
+    <div class="essay-archive-nav">
+      <div class="section-inner">
+        <a href="thoughts.html">All writing →</a>
+      </div>
+    </div>
+
+    <!-- Comments — tongue in cheek -->
+    <section id="comments">
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="section-label">Comments</span>
+          <h2>0 comments</h2>
+          <div class="divider"></div>
+        </div>
+        <div class="comments-body">
+          <div class="comments-mock" aria-hidden="true">
+            <span class="comments-mock-prompt">Write a comment…</span>
+          </div>
+          <p class="comments-cta">Email me. You might actually start a real discussion, instead of shouting into the void. If enough people email me about the same piece I'll put you all in a thread together.</p>
+          <a href="mailto:cathal.harte@proton.me" class="card-more">cathal.harte@proton.me →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="section-label">Contact</span>
+          <h2>Get in touch</h2>
+          <div class="divider"></div>
+        </div>
+        <div class="contact-grid">
+          <a href="mailto:cathal.harte@proton.me" class="contact-link" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            cathal.harte@proton.me
+          </a>
+          <a href="https://terapet.ch/" class="contact-link" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            Terapet
+          </a>
+          <a href="https://www.linkedin.com/in/cathal-harte" class="contact-link" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="scroll.js"></script>
+</body>
+</html>
