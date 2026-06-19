@@ -27,3 +27,20 @@ Current excerpt was drafted by the Secretary:
 
 **Action:** Author to supply their own one–two sentence tease for the
 `essay-adventure-as-an-attitude.html` card in `thoughts.html`.
+
+---
+
+## Article idea: Vigilante ethics and the authenticity of power
+
+Seed: Anthropic's public stance — "we're going to build this dangerous technology,
+because if we won't, someone worse will" — as a case study in vigilante logic.
+Who decides they're the responsible actor? What grants them that authority?
+Connects to the Noema-as-masked-vigilante thread in "Why Should I Use My Voice"
+(the unaccountable idea-philanthropy paragraph, currently underdeveloped there).
+
+Angle: not a technology essay. An ethics-of-power essay. The vigilante archetype
+across superhero mythology → Noema → Anthropic. The question is whether
+self-appointment as a responsible actor is ever coherent, and what "authenticity
+of power" would even mean.
+
+**Status:** idea only — no draft yet.
