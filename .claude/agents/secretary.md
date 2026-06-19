@@ -34,6 +34,9 @@ Your job, in order:
    propagate.
 5. **Update the indexes** — `thoughts.html` (new card → `#latest`, old latest →
    top of `#archive`) and `content.js` (`interests.more.url` → the new file).
+   For the essay card excerpt: do **not** draft it yourself — insert
+   `[EXCERPT NEEDED]` as a placeholder and ask the Author for their own
+   one–two sentence tease before pushing.
 6. **Stage a PR** on a `publish-{slug}` branch (hyphen, not slash). Never push
    to the live branch. In the PR body, include raw.githack.com **preview links**
    for the new essay, `thoughts.html`, and `index.html` so the Author can see the

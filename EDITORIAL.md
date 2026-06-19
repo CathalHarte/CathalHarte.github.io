@@ -132,8 +132,10 @@ deliberately unlisted, and not a voice or structure reference.
    - Move the current `#latest` `<a class="essay-card">` to the top of the
      `#archive` `<ol>` as `<li><a class="essay-archive-item">…</a></li>`
      (date as "Month YYYY", title text only).
-   - Insert the new essay-card in `#latest`: date ("Month YYYY"), title, a
-     one–two sentence excerpt (usually from the opening paragraph), "Read →".
+   - Insert the new essay-card in `#latest`: date ("Month YYYY"), title,
+     a one–two sentence excerpt supplied by the Author (the Secretary must
+     not draft this — use `[EXCERPT NEEDED]` as a placeholder and ask for
+     it before finalising the PR), "Read →".
 2. **`content.js`** — update the `interests.more` entry (the "More thoughts →"
    card on the home page) so its `url` is the new `essay-{slug}.html`.
 
