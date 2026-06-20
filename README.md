@@ -5,6 +5,13 @@ Built as a pure static site (HTML, CSS, vanilla JS) with no framework and no bui
 
 ---
 
+## AI assistance policy
+
+Only **Claude Opus 4.8 at effort level high or above** is accepted for AI-assisted
+work in this repository. Lower-effort models or settings are not to be used.
+
+---
+
 ## Pages
 
 | File | Purpose |
