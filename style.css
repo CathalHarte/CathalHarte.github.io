@@ -1105,3 +1105,11 @@ blockquote cite {
 /* ── Per-study press panels ───────────────────────────────────────────────── */
 .press-panel { display: none; }
 .press-panel.active { display: block; }
+
+/* Carousel cards are always visible — no slide-up jank inside the track */
+.carousel-slide .reveal,
+.carousel-slide .stagger > * {
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
