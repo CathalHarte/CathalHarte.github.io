@@ -47,6 +47,31 @@ body {
 }
 
 
+/* Nuclear medicine sub-page — products carousel */
+#products {
+  border-top: 4px solid #FF5500;
+  padding: 5rem 0 3rem;
+  overflow-x: hidden;
+  background-color: #000D1C;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.025'/%3E%3C/svg%3E"),
+    radial-gradient(ellipse 70% 60% at 80% 30%, rgba(91, 192, 255, 0.07) 0%, transparent 60%);
+  background-size: 200px 200px, cover;
+  color: #C8D0E0;
+  --muted: #4E6080;
+  --sky: #5BC0FF;
+}
+
+#articles {
+  background-color: #000D1C;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.025'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+  color: #C8D0E0;
+  --muted: #4E6080;
+  padding: 4rem 0;
+}
+
 /* Neurotech sub-page — studies carousel */
 #studies {
   border-top: 4px solid #FF5500;

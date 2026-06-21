@@ -14,9 +14,8 @@
   <nav id="nav">
     <a href="index.html" class="logo" id="nav-logo">CH</a>
     <ul id="nav-links">
-      <li><a href="#nuclycan">Nuclγscan</a></li>
-      <li><a href="#qualyscan">Qualγscan</a></li>
-      <li><a href="#writing">Writing</a></li>
+      <li><a href="#products" data-slide="0">Nuclγscan</a></li>
+      <li><a href="#products" data-slide="1">Qualγscan</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -33,49 +32,87 @@
       </div>
     </section>
 
-    <!-- Nuclγscan -->
-    <section id="nuclycan">
-      <div class="section-inner">
-        <div class="project-card project-card--blue reveal">
-          <div class="project-card-body">
-            <span class="project-badge">ISO 13485:2016 Certified</span>
-            <h3 class="project-name">Nuclγscan</h3>
-            <p class="project-subtitle">Total-body PET imaging · CERN spin-off technology</p>
-            <p class="project-desc">A next-generation total-body PET scanner designed for precision medicine and whole-body imaging at a level not previously possible.
+    <!-- Products carousel -->
+    <section id="products">
+      <div class="carousel-track" id="products-track">
+
+        <!-- Slide 0: Nuclγscan -->
+        <div class="carousel-slide" data-slide="0">
+          <div class="project-card project-card--blue">
+            <div class="project-card-body">
+              <span class="project-badge">ISO 13485:2016 Certified</span>
+              <h3 class="project-name">Nuclγscan</h3>
+              <p class="project-subtitle">Total-body PET imaging · CERN spin-off technology</p>
+              <p class="project-desc">A next-generation total-body PET scanner designed for precision medicine and whole-body imaging at a level not previously possible.
 I build the software across the full stack: acquisition, reconstruction, and clinical integration, in addition to leading the risk management activities across the whole design.
 The same underlying technology is also being applied for real-time proton therapy QA.</p>
+            </div>
           </div>
         </div>
+
+        <!-- Slide 1: Qualγscan -->
+        <div class="carousel-slide" data-slide="1">
+          <div class="project-card">
+            <div class="project-card-body">
+              <span class="project-badge">Shown at PTCOG 2026</span>
+              <h3 class="project-name">Qualγscan</h3>
+              <p class="project-subtitle">PET-based QA for particle therapy</p>
+              <p class="project-desc">Qualγscan is an evolving project in particle beam therapy dose verification. Tested first as a machine QA device, the project now sets its sights on in vivo verification, aiming to be the world's first commercial solution to this historically hard problem.</p>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /.carousel-track -->
+      <div class="carousel-dots" id="products-dots">
+        <button class="carousel-dot active" aria-label="Nuclγscan"></button>
+        <button class="carousel-dot" aria-label="Qualγscan"></button>
       </div>
     </section>
 
-    <!-- Qualγscan -->
-    <section id="qualyscan">
+    <!-- Per-product articles — panel switches with active slide -->
+    <section id="articles">
       <div class="section-inner">
-        <div class="project-card reveal">
-          <div class="project-card-body">
-            <span class="project-badge">Shown at PTCOG 2026</span>
-            <h3 class="project-name">Qualγscan</h3>
-            <p class="project-subtitle">Real-time QA for proton and particle therapy</p>
-            <p class="project-desc">Qualγscan monitors the beam in real time during particle therapy treatment — catching deviations before they reach the patient.
-I build the software side, from acquisition pipelines to the path toward regulatory clearance.</p>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Writing -->
-    <section id="writing">
-      <div class="section-inner">
-        <div class="project-card project-card--blue reveal">
-          <div class="project-card-body">
-            <span class="project-badge">Essay</span>
-            <h3 class="project-name">Solving Problems With a Computer</h3>
-            <p class="project-subtitle">The conventional chain, and what changes when LLMs enter it</p>
-            <p class="project-desc">From defining an objective to achieving it: the six-link chain of solving a problem with a computer, walked first the conventional way and then with large language models.</p>
-            <a href="essay-solving-problems-with-a-computer.html" class="card-more">Read the essay →</a>
+        <div class="press-panel active" data-slide="0">
+          <div class="section-header reveal">
+            <span class="section-label">Writing · Nuclγscan</span>
+            <h2>On building it</h2>
+            <div class="divider"></div>
+          </div>
+          <div class="press-grid stagger">
+            <a href="essay-solving-problems-with-a-computer.html" class="press-card">
+              <span class="press-type">Essay</span>
+              <span class="press-outlet">Cathal Harte</span>
+              <p class="press-title">Solving Problems With a Computer</p>
+            </a>
           </div>
         </div>
+
+        <div class="press-panel" data-slide="1">
+          <div class="section-header reveal">
+            <span class="section-label">Articles · Qualγscan</span>
+            <h2>In the news</h2>
+            <div class="divider"></div>
+          </div>
+          <div class="press-grid stagger">
+            <a href="https://report2023-kt.web.cern.ch/applications/taking-cancer-treatment-to-the-next-level" class="press-card" target="_blank" rel="noopener">
+              <span class="press-type">Feature</span>
+              <span class="press-outlet">CERN Knowledge Transfer</span>
+              <p class="press-title">Taking cancer treatment to the next level</p>
+            </a>
+            <a href="https://annualreport.swissnex.org/projects/project-terapet-expands-in-korea-with-successful-installation-at-yonsei-cancer-center-and-strategic-collaboration/" class="press-card" target="_blank" rel="noopener">
+              <span class="press-type">News</span>
+              <span class="press-outlet">SwissNex</span>
+              <p class="press-title">Terapet Expands in Korea with Successful Installation at Yonsei Cancer Center</p>
+            </a>
+            <a href="https://www.startupticker.ch/en/news/terapet-enters-the-japanese-market-with-strategic-partner" class="press-card" target="_blank" rel="noopener">
+              <span class="press-type">News</span>
+              <span class="press-outlet">Startup Ticker</span>
+              <p class="press-title">Terapet enters the Japanese market with Ansai Medical</p>
+            </a>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -107,5 +144,43 @@ I build the software side, from acquisition pipelines to the path toward regulat
   </main>
 
   <script src="scroll.js"></script>
+  <script>
+  (function () {
+    const track  = document.getElementById('products-track');
+    const slides = track.querySelectorAll('.carousel-slide');
+    const dots   = document.querySelectorAll('#products-dots .carousel-dot');
+    const panels = document.querySelectorAll('.press-panel');
+
+    function setActive(idx) {
+      dots.forEach((d, i) => d.classList.toggle('active', i === idx));
+      panels.forEach((p, i) => {
+        const becoming = i === idx;
+        const wasHidden = !p.classList.contains('active');
+        p.classList.toggle('active', becoming);
+        if (becoming && wasHidden) {
+          p.querySelectorAll('.reveal, .stagger').forEach(el => el.classList.add('visible'));
+        }
+      });
+    }
+
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) setActive(+e.target.dataset.slide); });
+    }, { root: track, threshold: 0.5 });
+    slides.forEach(s => io.observe(s));
+
+    setActive(0);
+
+    dots.forEach((dot, i) => dot.addEventListener('click', () =>
+      slides[i].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' })));
+
+    document.querySelectorAll('a[data-slide]').forEach(a => a.addEventListener('click', e => {
+      e.preventDefault();
+      document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
+      setTimeout(() =>
+        slides[+a.dataset.slide].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' })
+      , 300);
+    }));
+  })();
+  </script>
 </body>
 </html>
