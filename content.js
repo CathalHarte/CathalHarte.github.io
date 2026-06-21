@@ -100,7 +100,7 @@ function markup(str) {
 
 (function render(data) {
 
-  document.title = 'CV — ' + data.name;
+  document.title = data.name + ' — ' + data.title;
 
   document.getElementById('nav-logo').textContent = data.initials;
   const navSections = ['about', 'project', 'terapet', 'interests', 'contact'];

@@ -14,11 +14,12 @@
   <nav id="nav">
     <a href="index.html" class="logo" id="nav-logo">CH</a>
     <ul id="nav-links">
-      <li><a href="#bsi">BSI</a></li>
-      <li><a href="#stimo">STIMO</a></li>
-      <li><a href="#parkinsons">Parkinson's</a></li>
-      <li><a href="#robotics">Robotics</a></li>
-      <li><a href="#hemodynamics">Haemodynamics</a></li>
+      <li><a href="#studies" data-slide="0">Walking</a></li>
+      <li><a href="#studies" data-slide="1">Recovery</a></li>
+      <li><a href="#studies" data-slide="2">Parkinson's</a></li>
+      <li><a href="#studies" data-slide="3">Robotics</a></li>
+      <li><a href="#studies" data-slide="4">Blood pressure</a></li>
+      <li><a href="#studies" data-slide="5">Arms &amp; hands</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -31,129 +32,269 @@
         <a href="index.html" class="back-link"> Home</a>
         <span class="section-label">NeuroRestore · 2020–2023</span>
         <h1 class="page-title">Neurotechnology</h1>
-        <p class="page-desc">Five published studies across spinal cord injury, Parkinson's disease, and autonomic dysfunction — all built on the same clinical stimulation platform. A partnership between NeuroRestore, Clinatec, and Onward Medical.</p>
+        <p class="page-desc">NeuroRestore's mission is to find a cure for spinal cord injury. The approach is both neuroprosthetic and rehabilitative in nature, reconnecting intention with action through the integration of sensors and stimulators.</p>
       </div>
     </section>
 
-    <!-- Brain-Spine Interface -->
-    <section id="bsi">
-      <div class="section-inner">
-        <div class="project-card reveal">
-          <div class="project-card-body">
-            <span class="project-badge">Physics World Breakthrough of the Year 2023</span>
-            <h3 class="project-name">Brain-Spine Interface</h3>
-            <p class="project-subtitle">Restoring natural walking after chronic spinal cord injury</p>
-            <p class="project-desc">A cortical implant decodes movement intent wirelessly, in real time, driving a spinal stimulator that reawakens circuits below the injury. The system was deployed in patients' homes — the first time a brain-spine interface operated outside a clinical setting.</p>
-            <a href="https://www.nature.com/articles/s41586-023-06094-5" class="card-more" target="_blank" rel="noopener">Lorach et al., Nature, May 2023 →</a>
-          </div>
-          <a href="https://www.youtube.com/watch?v=AARVY-3oDRQ" class="project-video" target="_blank" rel="noopener" aria-label="Watch Brain-Spine Interface on YouTube">
-            <img src="https://img.youtube.com/vi/AARVY-3oDRQ/maxresdefault.jpg" alt="Brain-Spine Interface" class="project-video-thumb">
-            <span class="project-video-play"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg> Watch on YouTube</span>
-          </a>
-        </div>
-      </div>
-    </section>
+    <!-- Studies carousel -->
+    <section id="studies">
+      <div class="carousel-track" id="studies-track">
 
-    <!-- Activity-dependent neuromodulation -->
-    <section id="stimo">
-      <div class="section-inner">
-        <div class="project-card reveal">
-          <div class="project-card-body">
-            <span class="project-badge">Nature Medicine · February 2022</span>
-            <h3 class="project-name">Activity-Dependent Neuromodulation</h3>
-            <p class="project-subtitle">Stand, walk, cycle, swim — on day one</p>
-            <p class="project-desc">Epidural stimulation electrodes arranged to target the full ensemble of dorsal roots governing leg and trunk movement, rather than the conventional dorsal column approach. A computational framework guided both surgical electrode placement and stimulation mapping. Three participants with complete sensorimotor paralysis recovered diverse motor function — standing, walking, cycling, swimming, and trunk control — within a single day of optimisation.</p>
-            <a href="https://www.nature.com/articles/s41591-021-01663-5" class="card-more" target="_blank" rel="noopener">Rowald et al., Nature Medicine →</a>
+        <!-- Slide 0: Brain-Spine Interface -->
+        <div class="carousel-slide" data-slide="0">
+          <div class="project-card">
+            <div class="project-card-body">
+              <span class="project-badge">Nature · May 2023</span>
+              <h3 class="project-name">Brain-Spine Interface</h3>
+              <p class="project-subtitle">Restoring natural walking after chronic spinal cord injury</p>
+              <p class="project-desc">A wireless cortical implant decodes movement intent and drives a spinal stimulator in real time. Intensity modulation lets the user intuitively adapt step size while walking in real-world environments.</p>
+              <a href="https://www.nature.com/articles/s41586-023-06094-5" class="card-more" target="_blank" rel="noopener">Lorach et al., Nature, May 2023 →</a>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- Parkinson's neuroprosthesis -->
-    <section id="parkinsons">
-      <div class="section-inner">
-        <div class="project-card project-card--blue reveal">
-          <div class="project-card-body">
-            <span class="project-badge">Nature Medicine · November 2023</span>
-            <h3 class="project-name">Spinal Neuroprosthesis for Parkinson's Disease</h3>
-            <p class="project-subtitle">Alleviating freezing of gait in treatment-resistant Parkinson's</p>
-            <p class="project-desc">A closed-loop spinal implant targets the lumbosacral dorsal roots in real time, reproducing the natural spatiotemporal pattern of muscle activation during walking. First validated in a non-human primate model, then implanted in a 62-year-old patient with 30 years of advanced Parkinson's disease — improving stride length and symmetry, restoring balance, and dramatically reducing freezing of gait, working alongside existing deep brain stimulation and medication.</p>
-            <a href="https://www.nature.com/articles/s41591-023-02584-1" class="card-more" target="_blank" rel="noopener">Milekovic et al., Nature Medicine →</a>
+        <!-- Slide 1: Activity-Dependent Neuromodulation (STIMO) -->
+        <div class="carousel-slide" data-slide="1">
+          <div class="project-card project-card--blue">
+            <div class="project-card-body">
+              <span class="project-badge">Nature Medicine · February 2022</span>
+              <h3 class="project-name">Activity-Dependent Neuromodulation</h3>
+              <p class="project-subtitle">Stand, walk, cycle, swim — on day one</p>
+              <p class="project-desc">A new electrode arrangement targets the full dorsal root ensemble rather than the conventional dorsal column. Three participants with complete paralysis recovered functionality such as walking, cycling, swimming and, a function of underappreciated importance: trunk stability.</p>
+              <a href="https://www.nature.com/articles/s41591-021-01663-5" class="card-more" target="_blank" rel="noopener">Rowald et al., Nature Medicine →</a>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- Rehabilitation robotics -->
-    <section id="robotics">
-      <div class="section-inner">
-        <div class="project-card reveal">
-          <div class="project-card-body">
-            <span class="project-badge">Science Robotics · March 2025</span>
-            <h3 class="project-name">Rehabilitation Robotics and Spinal Neuromodulation</h3>
-            <p class="project-subtitle">Making robot-assisted rehabilitation actually work</p>
-            <p class="project-desc">Paralysis severs the voluntary muscle activation that rehabilitation robotics depend on — patients cannot generate the neural activity needed to benefit from the therapy. This study integrates an implanted spinal neuroprosthesis with commercial rehabilitation robots in a closed loop, delivering well-timed spinal stimulation in sync with robotic movement. Five participants showed immediate and sustained muscle activation, enabling outdoor walking and cycling. The system is designed to be device-agnostic and operable by non-experts.</p>
-            <a href="https://www.science.org/doi/10.1126/scirobotics.adn5564" class="card-more" target="_blank" rel="noopener">Hankov et al., Science Robotics →</a>
+        <!-- Slide 2: Parkinson's neuroprosthesis -->
+        <div class="carousel-slide" data-slide="2">
+          <div class="project-card project-card--blue">
+            <div class="project-card-body">
+              <span class="project-badge">Nature Medicine · November 2023</span>
+              <h3 class="project-name">Spinal Neuroprosthesis for Parkinson's Disease</h3>
+              <p class="project-subtitle">Alleviating freezing of gait in treatment-resistant Parkinson's</p>
+              <p class="project-desc">A closed-loop spinal implant reproduces the natural muscle-activation pattern of walking. In a patient with 30 years of advanced Parkinson's, it dramatically reduced freezing of gait.</p>
+              <a href="https://www.nature.com/articles/s41591-023-02584-1" class="card-more" target="_blank" rel="noopener">Milekovic et al., Nature Medicine →</a>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- Haemodynamic stability -->
-    <section id="hemodynamics">
-      <div class="section-inner">
-        <div class="project-card project-card--blue reveal">
-          <div class="project-card-body">
-            <span class="project-badge">Nature Medicine · September 2025</span>
-            <h3 class="project-name">Restoring Blood Pressure After Spinal Cord Injury</h3>
-            <p class="project-subtitle">Eliminating chronic hypotensive complications</p>
-            <p class="project-desc">Spinal cord injury frequently causes dysautonomia — the autonomic nervous system loses control of blood pressure, triggering dangerous hypotensive episodes that undermine rehabilitation and daily life. This study identified a critical insight: stimulation must target the last three thoracic spinal segments, not the lumbosacral region used for walking. In 14 participants, biomimetic epidural stimulation instantly induced robust pressor responses, durably resolved hypotensive episodes across 1,479 participants studied, and eliminated the need for conservative treatments — restoring independence in daily activities.</p>
-            <a href="https://www.nature.com/articles/s41591-025-03614-w" class="card-more" target="_blank" rel="noopener">Phillips et al., Nature Medicine →</a>
+        <!-- Slide 3: Rehabilitation robotics -->
+        <div class="carousel-slide" data-slide="3">
+          <div class="project-card project-card--blue">
+            <div class="project-card-body">
+              <span class="project-badge">Science Robotics · March 2025</span>
+              <h3 class="project-name">Rehabilitation Robotics and Spinal Neuromodulation</h3>
+              <p class="project-subtitle">Making robot-assisted rehabilitation actually work</p>
+              <p class="project-desc">Building on the sensor-actuator approach, NeuroRestore's stimulation platform technology was integrated with robotics, offering enhanced rehabilitation capabilities.</p>
+              <a href="https://www.science.org/doi/10.1126/scirobotics.adn5564" class="card-more" target="_blank" rel="noopener">Hankov et al., Science Robotics →</a>
+            </div>
           </div>
         </div>
+
+        <!-- Slide 4: Blood pressure / haemodynamics -->
+        <div class="carousel-slide" data-slide="4">
+          <div class="project-card project-card--blue">
+            <div class="project-card-body">
+              <span class="project-badge">Nature Medicine · September 2025</span>
+              <h3 class="project-name">Restoring Blood Pressure After Spinal Cord Injury</h3>
+              <p class="project-subtitle">Eliminating chronic hypotensive complications</p>
+              <p class="project-desc">Stimulation of the last three thoracic segments reawakened dormant blood pressure regulating circuitry to alleviate hypotension in 14 tetraplegic participants.</p>
+              <a href="https://www.nature.com/articles/s41591-025-03614-w" class="card-more" target="_blank" rel="noopener">Phillips et al., Nature Medicine →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 5: Digital Bridge for Tetraplegia -->
+        <div class="carousel-slide" data-slide="5">
+          <div class="project-card project-card--blue">
+            <div class="project-card-body">
+              <span class="project-badge">Preprint · 2026</span>
+              <h3 class="project-name">Digital Bridge for Tetraplegia</h3>
+              <p class="project-subtitle">ECoG + cervical epidural stimulation</p>
+              <p class="project-desc">A cervical brain-spine interface decodes up to 8 motor states via a foundation model and restores intentional arm and hand movements in people with chronic incomplete tetraplegia.</p>
+              <a href="https://infoscience.epfl.ch/entities/publication/4fc41eb5-3aca-4829-8bda-f7854e967eeb" class="card-more" target="_blank" rel="noopener">Collin, Yu et al., EPFL Infoscience →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 6: More to come -->
+        <div class="carousel-slide" data-slide="6">
+          <div class="project-card project-card--blue">
+            <div class="project-card-body">
+              <span class="project-badge">Coming soon</span>
+              <h3 class="project-name carousel-slide--muted">More to come</h3>
+              <p class="project-desc">Work continues. More studies in development.</p>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /.carousel-track -->
+      <div class="carousel-dots" id="studies-dots">
+        <button class="carousel-dot active" aria-label="Walking"></button>
+        <button class="carousel-dot" aria-label="Recovery"></button>
+        <button class="carousel-dot" aria-label="Parkinson's"></button>
+        <button class="carousel-dot" aria-label="Robotics"></button>
+        <button class="carousel-dot" aria-label="Blood pressure"></button>
+        <button class="carousel-dot" aria-label="Arms &amp; hands"></button>
+        <button class="carousel-dot" aria-label="More"></button>
       </div>
     </section>
 
-    <!-- Pull quote — relevant to all five studies -->
-    <section id="pullquote">
+    <!-- Per-study quote — cross-fades as active slide changes -->
+    <section id="study-quote">
       <div class="section-inner">
-        <blockquote class="reveal">
+        <blockquote class="study-quote active" data-slide="0">
           <p>I'd like to stress the substantial development effort we made to enable the system to be used at home. That's what makes the achievement all the more real for me.</p>
-          <cite>Silicon Republic</cite>
+          <cite>Cathal Harte · Silicon Republic</cite>
+        </blockquote>
+        <blockquote class="study-quote" data-slide="1">
+          <p>I watched from the screen, and the back of the group, as Michel Roccati took his first steps at the 2023 Wings for Life World Run in Zug. I breathed a sigh of relief that his new Flic buttons, installed on his walking frame, had worked as intended, and took my own first steps of the race.</p>
+          <cite>— CH</cite>
+        </blockquote>
+        <blockquote class="study-quote" data-slide="2">
+          <p>Right now, I'm not even afraid of the stairs anymore. Every Sunday I go to the lake, and I walk around 6 kilometres. It's incredible.</p>
+          <cite>— Marc Gauthier</cite>
+        </blockquote>
+        <blockquote class="study-quote" data-slide="3">
+          <p>We visited multiple rehabilitation centers to test our stimulation technology with the robotic systems they routinely use, and it was incredibly rewarding to witness their enthusiasm.</p>
+          <cite>— Nicolas Hankov &amp; Miroslav Caban</cite>
+        </blockquote>
+        <blockquote class="study-quote" data-slide="4">
+          <p>I have my life back. Now I can go back to school and finish my PhD.</p>
+          <cite>— Julie</cite>
+        </blockquote>
+        <blockquote class="study-quote" data-slide="5">
+          <p>This one was ambitious. Could the system handle the added complexity? Arm movements don't follow a regular pattern, so we couldn't take it one step at a time.</p>
+          <cite>— CH</cite>
         </blockquote>
       </div>
     </section>
 
-    <!-- Press -->
+    <!-- Per-study press — panel switches with active slide -->
     <section id="press">
       <div class="section-inner">
-        <div class="section-header reveal">
-          <span class="section-label">Press · Brain-Spine Interface</span>
-          <h2>In the news</h2>
-          <div class="divider"></div>
+
+        <div class="press-panel active" data-slide="0">
+          <div class="section-header reveal">
+            <span class="section-label">Press · Brain-Spine Interface</span>
+            <h2>In the news</h2>
+            <div class="divider"></div>
+          </div>
+          <div class="press-grid stagger">
+            <a href="https://www.siliconrepublic.com/machines/spinal-cord-stimulation-neurorestore-cathal-harte" class="press-card" target="_blank" rel="noopener">
+              <span class="press-type">Profile</span>
+              <span class="press-outlet">Silicon Republic</span>
+              <p class="press-title">Meet the Irish software engineer helping people with paralysis to walk again</p>
+            </a>
+            <a href="https://www.cnn.com/2023/05/24/health/walk-after-paralysis-with-implant-scn/index.html" class="press-card" target="_blank" rel="noopener">
+              <span class="press-type">News</span>
+              <span class="press-outlet">CNN</span>
+              <p class="press-title">Man with paralysis walks naturally after brain and spine implants</p>
+            </a>
+            <a href="https://www.scientificamerican.com/article/brain-spine-interface-allows-paralysed-man-to-walk-using-his-thoughts/" class="press-card" target="_blank" rel="noopener">
+              <span class="press-type">News</span>
+              <span class="press-outlet">Scientific American</span>
+              <p class="press-title">Brain-Spine Interface Allows Paralyzed Man to Walk Using His Thoughts</p>
+            </a>
+            <a href="https://www.cbsnews.com/news/paralyzed-man-walks-again-using-implants-connecting-brain-with-spinal-cord/" class="press-card" target="_blank" rel="noopener">
+              <span class="press-type">News</span>
+              <span class="press-outlet">CBS News</span>
+              <p class="press-title">Paralyzed man walks again using implants connecting brain with spinal cord</p>
+            </a>
+          </div>
         </div>
-        <div class="press-grid stagger">
-          <a href="https://www.siliconrepublic.com/machines/spinal-cord-stimulation-neurorestore-cathal-harte" class="press-card" target="_blank" rel="noopener">
-            <span class="press-type">Profile</span>
-            <span class="press-outlet">Silicon Republic</span>
-            <p class="press-title">Meet the Irish software engineer helping people with paralysis to walk again</p>
-          </a>
-          <a href="https://www.cnn.com/2023/05/24/health/walk-after-paralysis-with-implant-scn/index.html" class="press-card" target="_blank" rel="noopener">
-            <span class="press-type">News</span>
-            <span class="press-outlet">CNN</span>
-            <p class="press-title">Man with paralysis walks naturally after brain and spine implants</p>
-          </a>
-          <a href="https://www.scientificamerican.com/article/brain-spine-interface-allows-paralysed-man-to-walk-using-his-thoughts/" class="press-card" target="_blank" rel="noopener">
-            <span class="press-type">News</span>
-            <span class="press-outlet">Scientific American</span>
-            <p class="press-title">Brain-Spine Interface Allows Paralyzed Man to Walk Using His Thoughts</p>
-          </a>
-          <a href="https://www.cbsnews.com/news/paralyzed-man-walks-again-using-implants-connecting-brain-with-spinal-cord/" class="press-card" target="_blank" rel="noopener">
-            <span class="press-type">News</span>
-            <span class="press-outlet">CBS News</span>
-            <p class="press-title">Paralyzed man walks again using implants connecting brain with spinal cord</p>
-          </a>
+
+        <div class="press-panel" data-slide="1">
+          <div class="section-header reveal">
+            <span class="section-label">Press · Recovery</span>
+            <h2>In the news</h2>
+            <div class="divider"></div>
+          </div>
+          <div class="press-grid stagger">
+            <a href="https://www.wingsforlifeworldrun.com/" class="press-card" target="_blank" rel="noopener">
+              <span class="press-type">Story</span>
+              <span class="press-outlet">Wings for Life World Run</span>
+              <p class="press-title">Michel Roccati runs the 2023 World Run in Zug on implanted electrodes</p>
+            </a>
+          </div>
         </div>
+
+        <div class="press-panel" data-slide="2">
+          <div class="section-header reveal">
+            <span class="section-label">Press · Parkinson's</span>
+            <h2>In the news</h2>
+            <div class="divider"></div>
+          </div>
+          <div class="press-grid stagger">
+            <a href="https://www.nature.com/articles/d41586-023-03452-1" class="press-card" target="_blank" rel="noopener">
+              <span class="press-type">News</span>
+              <span class="press-outlet">Nature</span>
+              <p class="press-title">Spinal implant helps man with advanced Parkinson's to walk without falling</p>
+            </a>
+            <a href="https://medicalxpress.com/news/2023-11-spinal-implant-parkinson-patient.html" class="press-card" target="_blank" rel="noopener">
+              <span class="press-type">News</span>
+              <span class="press-outlet">Medical Xpress</span>
+              <p class="press-title">Spinal implant allows Parkinson's patient to walk again</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="press-panel" data-slide="3">
+          <div class="section-header reveal">
+            <span class="section-label">Press · Robotics</span>
+            <h2>In the news</h2>
+            <div class="divider"></div>
+          </div>
+          <div class="press-grid stagger">
+            <a href="https://actu.epfl.ch/news/robotics-and-spinal-stimulation-restore-movement-i/" class="press-card" target="_blank" rel="noopener">
+              <span class="press-type">Press release</span>
+              <span class="press-outlet">EPFL</span>
+              <p class="press-title">Robotics and spinal stimulation restore movement in paralysis</p>
+            </a>
+            <a href="https://www.sciencedaily.com/releases/2025/03/250312145730.htm" class="press-card" target="_blank" rel="noopener">
+              <span class="press-type">News</span>
+              <span class="press-outlet">Science Daily</span>
+              <p class="press-title">Robotics and spinal stimulation restore movement in paralysis</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="press-panel" data-slide="4">
+          <div class="section-header reveal">
+            <span class="section-label">Press · Blood pressure</span>
+            <h2>In the news</h2>
+            <div class="divider"></div>
+          </div>
+          <div class="press-grid stagger">
+            <a href="https://medicalxpress.com/news/2025-09-implantable-neurostimulation-blood-pressure-spinal.html" class="press-card" target="_blank" rel="noopener">
+              <span class="press-type">News</span>
+              <span class="press-outlet">Medical Xpress</span>
+              <p class="press-title">Implantable neurostimulation system restores blood pressure balance after spinal cord injury</p>
+            </a>
+            <a href="https://www.chuv.ch/en/journalistes/detail/new-implant-restores-blood-pressure-balance-after-spinal-cord-injury" class="press-card" target="_blank" rel="noopener">
+              <span class="press-type">Press release</span>
+              <span class="press-outlet">CHUV</span>
+              <p class="press-title">New implant restores blood pressure balance after spinal cord injury</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="press-panel" data-slide="5">
+          <div class="section-header reveal">
+            <span class="section-label">Preprint · Digital Bridge</span>
+            <h2>Read the preprint</h2>
+            <div class="divider"></div>
+          </div>
+          <div class="press-grid stagger">
+            <a href="https://infoscience.epfl.ch/entities/publication/4fc41eb5-3aca-4829-8bda-f7854e967eeb" class="press-card" target="_blank" rel="noopener">
+              <span class="press-type">Preprint</span>
+              <span class="press-outlet">EPFL Infoscience</span>
+              <p class="press-title">An Implantable Digital Bridge Enables Arm And Hand Movements After Tetraplegia</p>
+            </a>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -185,5 +326,46 @@
   </main>
 
   <script src="scroll.js"></script>
+  <script>
+  (function () {
+    const track  = document.getElementById('studies-track');
+    const slides = track.querySelectorAll('.carousel-slide');
+    const dots   = document.querySelectorAll('#studies-dots .carousel-dot');
+    const quotes = document.querySelectorAll('.study-quote');
+    const panels = document.querySelectorAll('.press-panel');
+
+    function setActive(idx) {
+      dots.forEach((d, i) => d.classList.toggle('active', i === idx));
+      quotes.forEach((q, i) => q.classList.toggle('active', i === idx));
+      panels.forEach((p, i) => {
+        const becoming = i === idx;
+        const wasHidden = !p.classList.contains('active');
+        p.classList.toggle('active', becoming);
+        if (becoming && wasHidden) {
+          p.querySelectorAll('.reveal, .stagger').forEach(el => el.classList.add('visible'));
+        }
+      });
+      slides[idx].querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+    }
+
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) setActive(+e.target.dataset.slide); });
+    }, { root: track, threshold: 0.5 });
+    slides.forEach(s => io.observe(s));
+
+    setActive(0);
+
+    dots.forEach((dot, i) => dot.addEventListener('click', () =>
+      slides[i].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' })));
+
+    document.querySelectorAll('a[data-slide]').forEach(a => a.addEventListener('click', e => {
+      e.preventDefault();
+      document.getElementById('studies').scrollIntoView({ behavior: 'smooth' });
+      setTimeout(() =>
+        slides[+a.dataset.slide].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' })
+      , 300);
+    }));
+  })();
+  </script>
 </body>
 </html>

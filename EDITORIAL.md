@@ -46,6 +46,12 @@ piece. Advisory, not authoritative — the Author decides.
 
 ---
 
+## Writing philosophy
+
+> You don't impress by making a complex system sound complicated, you impress by making a complex system sound simple, and by creating an entry point to explore, step by step, the complexities of such a system.
+
+---
+
 ## Recommended flow
 
 ```
