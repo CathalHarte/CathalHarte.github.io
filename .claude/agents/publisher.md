@@ -38,12 +38,15 @@ Structure:
 1. **Hook** — one sentence, no preamble. Start in the middle of the idea, not
    with "I wrote a thing." Ask a question, make a claim, or open with the most
    surprising sentence from the essay.
-2. **3–4 short paragraphs** — unpack the idea just enough to make the link
-   worth clicking. Write in Cathal's voice: direct, no jargon inflation, no
-   corporate softness.
+2. **One short paragraph** — plant one idea that creates a question in the
+   reader's head. Do NOT summarise the essay. If they finish reading the post
+   knowing the argument, they have no reason to click. Leave something
+   unresolved. Three sentences maximum.
 3. **Link** — on its own line at the end. Full URL, no shorteners.
 4. **Tags** — two at most, only if genuinely relevant (e.g. `#neurotech`,
    `#medicaltechnology`). Never generic (#innovation, #leadership).
+
+The post should be 6–8 lines total. If it runs longer, cut until it doesn't.
 
 Timing: Tuesday, Wednesday, or Thursday. 9–11 am CET.
 
