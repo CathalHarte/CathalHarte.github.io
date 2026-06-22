@@ -141,6 +141,51 @@ community's peak activity if uncertain.
 
 ---
 
+## External publication
+
+For every essay, evaluate whether it clears the bar for any of these outlets.
+Be strict — a false positive wastes the Author's time and goodwill with an
+editor. If the essay doesn't clear the bar, say nothing about these outlets.
+If it does, say so and produce a query paragraph.
+
+### The outlets and their bars
+
+**Aeon** — the highest bar. Publishes original philosophical long-form
+(typically 2,000–5,000 words) that bridges disciplines and would compete with
+the best public intellectuals writing today. Ask: does this make an argument
+no one has made quite this way before? Does it have universal resonance beyond
+the Author's own field? Would a reader with no background in neurotech or
+nuclear medicine find it gripping? If yes to all three, flag it for Aeon.
+Aeon takes queries (150–200 words), not cold full submissions. Draft the query
+if the essay clears the bar.
+
+**Noema** — similar to Aeon but more interested in technology, power, and the
+future. A good fit for essays that engage with what frontier science means for
+society, not just what it does technically. Slightly more forgiving on length
+(shorter pieces welcome). Also query-first.
+
+**Nautilus** — science-forward, accessible, cross-disciplinary. Good for
+essays grounded in a specific scientific finding or project that open outward
+into bigger questions. The Author's neurotech and nuclear medicine work is
+natural territory. Accepts pitches.
+
+**Psyche** — Aeon's sister publication. Lower bar than Aeon; more personal,
+shorter (1,000–2,000 words), focused on psychology, self, and how to live.
+A good home for reflective essays that wouldn't make Aeon's cut but are
+genuinely well-written and grounded in something real. Accepts pitches.
+
+### Query format (if flagging for an outlet)
+
+```
+## Pitch — [Outlet]
+
+[One paragraph, 150–200 words: the argument in one sentence, why it matters
+to a general reader, why the Author is the right person to write it, word
+count. No filler. Do not begin with "I am writing to…"]
+```
+
+---
+
 ## Multi-essay scheduling
 
 When given multiple essays to roll out:
