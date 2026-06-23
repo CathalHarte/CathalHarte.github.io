@@ -1071,11 +1071,14 @@ blockquote cite {
   display: flex;
   flex-wrap: nowrap;
   align-items: flex-start;
+  box-sizing: border-box;
   width: 100%;
+  max-width: 900px;
+  margin-inline: auto;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-  gap: 0;
+  gap: 1rem;
   padding: 0 2rem;
   scroll-padding-inline: 2rem;
   scrollbar-width: none;
@@ -1085,8 +1088,6 @@ blockquote cite {
 .carousel-slide {
   scroll-snap-align: start;
   flex: 0 0 100%;
-  box-sizing: border-box;
-  padding-inline: 1rem;
 }
 
 .carousel-slide--muted { color: var(--muted, #4E6080); }
