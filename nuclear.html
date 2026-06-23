@@ -163,21 +163,29 @@ The same underlying technology is also being applied for real-time proton therap
       });
     }
 
-    const io = new IntersectionObserver(entries => {
-      entries.forEach(e => { if (e.isIntersecting) setActive(+e.target.dataset.slide); });
-    }, { root: track, threshold: 0.5 });
-    slides.forEach(s => io.observe(s));
+    function updateActive() {
+      const mid = track.scrollLeft + track.clientWidth / 2;
+      let best = 0, min = Infinity;
+      slides.forEach((s, i) => {
+        const d = Math.abs(s.offsetLeft + s.offsetWidth / 2 - mid);
+        if (d < min) { min = d; best = i; }
+      });
+      setActive(best);
+    }
+    track.addEventListener('scrollend', updateActive, { passive: true });
+    let _t;
+    track.addEventListener('scroll', () => { clearTimeout(_t); _t = setTimeout(updateActive, 100); }, { passive: true });
 
     setActive(0);
 
     dots.forEach((dot, i) => dot.addEventListener('click', () =>
-      slides[i].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' })));
+      slides[i].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' })));
 
     document.querySelectorAll('a[data-slide]').forEach(a => a.addEventListener('click', e => {
       e.preventDefault();
       document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
       setTimeout(() =>
-        slides[+a.dataset.slide].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' })
+        slides[+a.dataset.slide].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' })
       , 300);
     }));
   })();
