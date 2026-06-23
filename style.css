@@ -1075,15 +1075,18 @@ blockquote cite {
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-  gap: 1.5rem;
+  gap: 0;
   padding: 0 2rem;
+  scroll-padding-inline: 2rem;
   scrollbar-width: none;
 }
 .carousel-track::-webkit-scrollbar { display: none; }
 
 .carousel-slide {
-  scroll-snap-align: center;
-  flex: 0 0 min(700px, calc(100vw - 4rem));
+  scroll-snap-align: start;
+  flex: 0 0 100%;
+  box-sizing: border-box;
+  padding-inline: 1rem;
 }
 
 .carousel-slide--muted { color: var(--muted, #4E6080); }
