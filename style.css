@@ -971,6 +971,27 @@ h2 {
   color: #0A0A0A;
 }
 
+/* ── Essay figures ─────────────────────────────────────────────────────────── */
+.essay-prose figure {
+  margin: 2.4rem 0;
+}
+
+.essay-prose figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+.essay-prose figcaption {
+  margin-top: 0.7rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: #8A9AB8;
+  text-transform: uppercase;
+  font-family: 'Inter', sans-serif;
+}
+
 /* ── Comments section ──────────────────────────────────────────────────────── */
 #comments {
   background-color: #040608;
