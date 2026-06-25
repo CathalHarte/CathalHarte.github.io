@@ -25,6 +25,12 @@ Also read `essay-adventure-as-an-attitude.html` and `essay-raised-by-wolves.html
 to calibrate to Cathal's voice. The promotional copy should sound like him, not
 like marketing.
 
+Voice constraints that apply to all platforms:
+- **No em dashes** (`—`). Cathal does not use them. Rewrite any sentence that
+  would need one.
+- Short sentences. No throat-clearing. No connective tissue that exists only to
+  sound sophisticated.
+
 ---
 
 ## Platform rules
