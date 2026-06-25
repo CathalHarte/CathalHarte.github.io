@@ -38,10 +38,16 @@ Your job, in order:
    `[EXCERPT NEEDED]` as a placeholder and ask the Author for their own
    one–two sentence tease before pushing.
 6. **Stage a PR** on a `publish-{slug}` branch (hyphen, not slash). Never push
-   to the live branch. In the PR body, include raw.githack.com **preview links**
-   for the new essay, `thoughts.html`, and `index.html` so the Author can see the
-   rendered pages before merging:
-   `https://raw.githack.com/CathalHarte/CathalHarte.github.io/publish-{slug}/essay-{slug}.html`
+   to the live branch. The PR body **must** contain raw.githack.com preview links
+   for the new essay, `thoughts.html`, and `index.html` — this is non-negotiable.
+   If you cannot create a PR programmatically, output the links as the first thing
+   in your final report so the Author can open them immediately:
+
+   ```
+   https://raw.githack.com/CathalHarte/CathalHarte.github.io/publish-{slug}/essay-{slug}.html
+   https://raw.githack.com/CathalHarte/CathalHarte.github.io/publish-{slug}/thoughts.html
+   https://raw.githack.com/CathalHarte/CathalHarte.github.io/publish-{slug}/index.html
+   ```
 
 Guardrails:
 
