@@ -69,7 +69,7 @@ const CV = {
   interests: {
     body: 'Deliberately staying away from the mainstream — no algorithmic feeds, no social media recommendations. I read Noema, Aeon, and Nature via newsletters.',
     cta:  'Drop me an email to talk about the revolution.',
-    more: { label: 'More thoughts →', url: 'essay-is-claudes-constitution-aligned-with-planetary-flourishing.html' },
+    more: { label: 'More thoughts →', url: 'essay-social-soil.html' },
   },
 
   pullquote: {
