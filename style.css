@@ -895,6 +895,16 @@ h2 {
   margin-bottom: 1.4rem;
 }
 
+.essay-prose a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.essay-prose a:hover {
+  color: #FF5500;
+}
+
 .essay-prose h2 {
   font-family: 'Source Serif 4', serif;
   font-size: 1.55rem;

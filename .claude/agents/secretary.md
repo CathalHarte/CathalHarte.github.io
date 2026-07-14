@@ -34,6 +34,9 @@ Your job, in order:
    propagate.
 5. **Update the indexes** — `thoughts.html` (new card → `#latest`, old latest →
    top of `#archive`) and `content.js` (`interests.more.url` → the new file).
+   When moving an essay into `#archive`, use its **full publication date**
+   (e.g. `23 June 2026`) in `.essay-archive-date`, matching the date on the essay
+   page — never just the month.
    For the essay card excerpt: do **not** draft it yourself — insert
    `[EXCERPT NEEDED]` as a placeholder and ask the Author for their own
    one–two sentence tease before pushing.
