@@ -13,6 +13,11 @@ const CV = {
   name:         'Cathal Harte',
   initials:     'CH',
   title:        'Medical Device Engineer',
+  taglines: [
+    'Building implausible technology routinely',
+    'Stubbornly building technology for the greater good',
+    'Don\'t let your yearning for complexity lead you to complicating things',
+  ],
   about: [
     'I build medical devices at the frontier of neurotechnology and nuclear medicine — from laboratory prototypes to systems deployed in patients\' homes.',
     'At NeuroRestore, I led the software and system development that powered the Brain-Spine Interface: a digital bridge that restores natural walking to patients with chronic paralysis. The work was published in Nature in 2023 and named Physics World Breakthrough of the Year. I now work at Terapet, a CERN spin-off, developing software for Nuclγscan — a next-generation total-body PET scanner for precision medicine.',
@@ -127,7 +132,11 @@ function renderHero(d) {
     <section id="hero" data-initials="${d.initials}">
       <div class="hero-inner">
         <h1 class="hero-name">${d.name}</h1>
-        <p class="hero-title">${d.title}</p>
+        <p class="hero-title">
+          <span class="hero-rotate">
+            ${(d.taglines || [d.title]).map(t => `<span>${t}</span>`).join('')}
+          </span>
+        </p>
         <div class="hero-links">
           <a href="#contact" class="btn btn-primary">Get in touch</a>
           <a href="#project" class="btn btn-ghost">View my work</a>
