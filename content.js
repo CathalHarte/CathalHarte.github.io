@@ -16,7 +16,7 @@ const CV = {
   taglines: [
     'Building implausible technology routinely',
     'Stubbornly building technology for the greater good',
-    'Don\'t let your yearning for complexity lead you to complicating things',
+    'Complex systems with minimal complications',
   ],
   about: [
     'I build medical devices at the frontier of neurotechnology and nuclear medicine — from laboratory prototypes to systems deployed in patients\' homes.',
