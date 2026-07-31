@@ -942,6 +942,50 @@ h2 {
   letter-spacing: -0.01em;
 }
 
+.essay-prose ol,
+.essay-prose ul {
+  counter-reset: step;
+  list-style: none;
+  margin: 0 0 1.4rem;
+  padding: 0;
+}
+
+.essay-prose ol li,
+.essay-prose ul li {
+  position: relative;
+  padding-left: 2.4rem;
+  margin-bottom: 0.7rem;
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: #1A1A1A;
+}
+
+.essay-prose ol li { counter-increment: step; }
+
+.essay-prose ol li::before {
+  content: counter(step) ".";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: 'Source Serif 4', serif;
+  font-weight: 800;
+  font-size: 1.05rem;
+  color: #FF5500;
+}
+
+.essay-prose ul li::before {
+  content: "";
+  position: absolute;
+  left: 0.4rem;
+  top: 0.7em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #FF5500;
+}
+
+.essay-prose li:last-child { margin-bottom: 0; }
+
 .essay-prose blockquote {
   border-left: 3px solid #FF5500;
   padding: 0.2rem 0 0.2rem 1.8rem;
