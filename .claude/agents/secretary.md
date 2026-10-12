@@ -31,9 +31,12 @@ Your job, in order:
    guess a link.
 4. **Produce** `essay-{slug}.html` using the template frame. Do not hand-rebuild
    the nav, comments, or contact blocks — copy them so template changes
-   propagate.
+   propagate. Fill every placeholder in the `<head>` search/AI metadata block
+   (`TITLE`, `SLUG`, `DATE`, and `DESCRIPTION` = the Author's card excerpt).
 5. **Update the indexes** — `thoughts.html` (new card → `#latest`, old latest →
-   top of `#archive`) and `content.js` (`interests.more.url` → the new file).
+   top of `#archive`) and `content.js` (`interests.more.url` → the new file),
+   then run `node tools/prerender.mjs`. Add the essay to `sitemap.xml` and
+   `llms.txt`.
    When moving an essay into `#archive`, use its **full publication date**
    (e.g. `23 June 2026`) in `.essay-archive-date`, matching the date on the essay
    page — never just the month.

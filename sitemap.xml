@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Public pages only. Add each newly published essay here (see EDITORIAL.md). -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://cathalharte.ch/</loc></url>
+  <url><loc>https://cathalharte.ch/neurotech.html</loc></url>
+  <url><loc>https://cathalharte.ch/nuclear.html</loc></url>
+  <url><loc>https://cathalharte.ch/thoughts.html</loc><lastmod>2026-09-01</lastmod></url>
+  <url><loc>https://cathalharte.ch/essay-the-truth-of-accountants.html</loc><lastmod>2026-09-01</lastmod></url>
+  <url><loc>https://cathalharte.ch/essay-the-hospital-pass.html</loc><lastmod>2026-08-04</lastmod></url>
+  <url><loc>https://cathalharte.ch/essay-raised-by-wolves.html</loc><lastmod>2026-07-14</lastmod></url>
+  <url><loc>https://cathalharte.ch/essay-is-claudes-constitution-aligned-with-planetary-flourishing.html</loc><lastmod>2026-06-25</lastmod></url>
+  <url><loc>https://cathalharte.ch/essay-adventure-as-an-attitude.html</loc><lastmod>2026-06-23</lastmod></url>
+</urlset>

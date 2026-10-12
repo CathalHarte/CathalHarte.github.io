@@ -106,7 +106,10 @@ dropped, non-alphanumerics collapsed to hyphens
 **Copy the frame from `essay-template.html`** — do not hand-rebuild it — so
 design changes to the template propagate automatically. The frame:
 
-- `<head>`: title `{Title} — Cathal Harte`, the Google Fonts links, `style.css`.
+- `<head>`: title `{Title} — Cathal Harte`, the search/AI metadata block (description,
+  canonical, Open Graph, `BlogPosting` JSON-LD — fill every `TITLE`, `SLUG`,
+  `DESCRIPTION`, `DATE` placeholder; DESCRIPTION is the Author's card excerpt),
+  the Google Fonts links, `style.css`.
 - `#progress`, `#nav` (logo `CH`; links: All writing → / Comments / Contact).
 - `<main>`:
   - `#page-intro` → `.section-label` = date, `.page-title` = title.
@@ -143,7 +146,13 @@ deliberately unlisted, and not a voice or structure reference.
      not draft this — use `[EXCERPT NEEDED]` as a placeholder and ask for
      it before finalising the PR), "Read →".
 2. **`content.js`** — update the `interests.more` entry (the "More thoughts →"
-   card on the home page) so its `url` is the new `essay-{slug}.html`.
+   card on the home page) so its `url` is the new `essay-{slug}.html`, then run
+   `node tools/prerender.mjs` so `index.html` carries the change in plain HTML.
+3. **`sitemap.xml`** — add a `<url>` for the new essay (with `<lastmod>` = publish
+   date) and bump the `thoughts.html` `<lastmod>`.
+4. **`llms.txt`** — add the essay to the top of the **Essays** list.
+
+Unlisted or `noindex` pages never go in `sitemap.xml` or `llms.txt`.
 
 ---
 
@@ -153,7 +162,8 @@ Never push to the live branch directly:
 
 1. Branch off the current working branch: `git checkout -b publish-{slug}`.
    Use a **hyphen, not a slash** — the preview links below break on slashes.
-2. Stage the new essay, `thoughts.html`, and `content.js`.
+2. Stage the new essay, `thoughts.html`, `content.js`, `index.html`,
+   `sitemap.xml`, and `llms.txt`.
 3. Commit: `publish: {Title}`.
 4. Push and open a PR for the Author to review and merge.
 5. Put **preview links** in the PR body (see below) so the Author can see the
