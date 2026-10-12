@@ -1,0 +1,16 @@
+name: Pre-render check
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  index-in-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: index.html matches content.js
+        run: node tools/prerender.mjs --check

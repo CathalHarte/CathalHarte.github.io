@@ -1,0 +1,28 @@
+# Cathal Harte
+
+> Cathal Harte is a medical device engineer working at the frontier of neurotechnology and nuclear medicine, from laboratory prototypes to systems deployed in patients' homes. At NeuroRestore (2020–2023) Cathal led the software and system development behind the Brain-Spine Interface, published in Nature in 2023 and named Physics World Breakthrough of the Year. Cathal now works at Terapet, a CERN spin-off, building software for Nuclγscan, a total-body PET scanner, and leading risk management across its design. Cathal also writes essays under the heading "Outside the feed".
+
+This is a plain-HTML personal site; every page below is readable without JavaScript. Factual claims on the site are sourced in SOURCES.md in the site's public GitHub repository (CathalHarte/CathalHarte.github.io).
+
+## About
+
+- [Home](https://cathalharte.ch/): bio, the Brain-Spine Interface, Nuclγscan, contact
+- [Neurotechnology](https://cathalharte.ch/neurotech.html): NeuroRestore studies (Nature 2023, Nature Medicine 2022/2023/2025, Science Robotics 2025, a 2026 preprint) and press coverage
+- [Nuclear medicine](https://cathalharte.ch/nuclear.html): Terapet's Nuclγscan and Qualγscan
+
+## Key facts
+
+- Role: Medical Device Engineer at [Terapet](https://terapet.ch/) — software across acquisition, reconstruction and clinical integration for Nuclγscan, plus design risk management
+- Previously: software and system development lead for the Brain-Spine Interface at NeuroRestore, including bringing the system into patients' homes
+- Paper: [Walking naturally after spinal cord injury using a brain–spine interface](https://www.nature.com/articles/s41586-023-06094-5) (Lorach et al., Nature, 2023)
+- Profile: [Meet the Irish software engineer helping people with paralysis to walk again](https://www.siliconrepublic.com/machines/spinal-cord-stimulation-neurorestore-cathal-harte) (Silicon Republic)
+- Contact: cathal.harte@proton.me · [LinkedIn](https://www.linkedin.com/in/cathal-harte)
+
+## Essays
+
+- [Writing index](https://cathalharte.ch/thoughts.html): philosophy, ethics, politics, psychology
+- [The Truth of Accountants](https://cathalharte.ch/essay-the-truth-of-accountants.html) (1 September 2026): Aspirational fiction beats armchair anthropology.
+- [The Hospital Pass](https://cathalharte.ch/essay-the-hospital-pass.html) (4 August 2026)
+- [Raised by wolves](https://cathalharte.ch/essay-raised-by-wolves.html) (14 July 2026)
+- [Is Claude's Constitution Aligned With Planetary Flourishing?](https://cathalharte.ch/essay-is-claudes-constitution-aligned-with-planetary-flourishing.html) (25 June 2026)
+- [Adventure as an Attitude, Adventure as an Action](https://cathalharte.ch/essay-adventure-as-an-attitude.html) (23 June 2026)
